@@ -1,0 +1,251 @@
+/*Body*/
+body {
+/*Background*/
+    background: url(background.jpg) ;
+    background-position: center center ;
+    background-repeat: no-repeat ;
+    background-attachment: fixed ;
+    background-size: cover ;
+    background-color: black ;
+    margin: 0 ;
+}
+/*Background responsive mobile*/
+@media only screen and (max-width : 767px) {
+body {
+    background: url(backgroundMob.jpg) ;
+    background-position: center center ;
+    background-repeat: no-repeat ;
+    background-attachment: fixed ;
+    background-size: cover ;
+    background-color: black ;
+    margin: 0 ;
+    }
+}
+/*Header navigation bar*/
+.frame {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+button {
+    margin: 20px;
+    margin-top: 2px ;
+}
+.custom-btn {
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+.btn-7 {
+    color: #fff;
+    line-height: 40px;
+    padding: 0;
+    border: none;
+}
+.btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.btn-7:before,
+.btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    box-shadow: 0 0 5px #fff;
+    transition: all 0.3s ease;
+}
+.btn-7:before{
+    height: 50%;
+    width: 2px;
+}
+.btn-7:after {
+    width: 20%;
+    height: 2px;
+}
+.btn-7:hover:before {
+    height: 100%;
+}
+.btn-7:hover:after {
+    width: 100%;
+}
+.btn-7 span:before,
+.btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #fff;
+    box-shadow: 0 0 5px #fff;
+    transition: all 0.3s ease;
+}
+.btn-7 span:before {
+    width: 2px;
+    height: 50%;
+}
+.btn-7 span:after {
+    height: 2px;
+    width: 20%;
+}
+.btn-7 span:hover:before {
+    height: 100%;
+}
+.btn-7 span:hover:after {
+    width: 100%;
+}
+/*Sliding name*/
+div.slide-left {
+    display: inline-block;
+    width: fit-content;
+    overflow:hidden;
+    font-family: "Roboto";
+    color: #FFFFFF;
+    font-size: 35px;
+    text-align: center;
+    margin-top: 3%;
+    margin-left: 15%;
+}
+/*Sliding name animation*/
+div.slide-left .slide-left {
+    animation: slide-left 5s;
+}
+@keyframes slide-left {
+    from {
+    margin-left: 100%;
+    width: 300%; 
+}
+    to {
+    margin-left: 50%;
+    width: 100%;
+}
+}
+/*Sliding name responsive*/
+@media screen and (max-width: 600px) {
+    div.slide-left {
+    font-size: 25px;
+    }
+}
+@media screen and (min-width: 601px) {
+    div.slide-left {
+    font-size: 35px;
+    }
+}
+/*Dev full stack h1*/
+h1 {
+    font-family: "Roboto";
+    color: #FFFFFF;
+    font-size: 70px;
+    width: 100%;
+    text-align: center;
+    width: fit-content;
+    margin-top: 0px;
+    margin-left: 20%;
+    transform: scale(0.94);
+    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+/*Dev full stack h1 responsive*/
+@media screen and (max-width: 600px) {
+    h1 {
+    font-size: 30px;
+    }
+}
+  @media screen and (min-width: 601px) {
+    h1 {
+    font-size: 70px;
+    }
+}
+span.texth1 {
+    font-family: "Roboto";
+    color: #FFFFFF;
+}
+@media screen and (max-width: 600px) {
+    span.texth1 {
+    font-size: 20px;
+    }
+}
+  @media screen and (min-width: 601px) {
+    span.texth1 {
+      font-size: 60px;
+    }
+}
+@keyframes scale {
+    100% {
+    transform: scale(1);
+    }
+}
+span {
+    display: inline-block;
+    opacity: 0;
+    filter: blur(4px);
+}
+span:nth-child(1) {
+    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(2) {
+    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+  span:nth-child(3) {
+    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(4) {
+    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(5) {
+    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(6) {
+    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(7) {
+    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(8) {
+    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(9) {
+    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(10) {
+    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(11) {
+    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(12) {
+    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(13) {
+    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(14) {
+    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(15) {
+    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(16) {
+    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(17) {
+    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+span:nth-child(18) {
+    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+@keyframes fade-in {
+    100% {
+    opacity: 1;
+    filter: blur(0);
+    }
+}
