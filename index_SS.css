@@ -250,86 +250,77 @@ span:nth-child(18) {
     filter: blur(0);
     }
 }
-
-
+/*Cards*/
 * {
 	box-sizing: border-box;
 }
-
 .container {
     font-family: "Roboto";
     margin-top: 4%;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 @media screen and (max-width: 600px) {
-    .container {
-display: inline-block;
-justify-content: center ;
-position: relative;
-align-items: center;
-    }}
-
+.container {
+    display: inline-block;
+    justify-content: center ;
+    position: relative;
+    align-items: center;
+    }
+}
 .card {
-  width: 400px;
-  min-height: 250px;
-  background: rgba( 255, 255, 255, 0.15 );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-  backdrop-filter: blur( 18px );
-  -webkit-backdrop-filter: blur( 18px );
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
-  border-radius: 1rem;
-  padding: 1.5rem;
-  z-index: 10;
-  color: whitesmoke;
+    width: 400px;
+    min-height: 250px;
+    background: rgba( 255, 255, 255, 0.15 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18px );
+    -webkit-backdrop-filter: blur( 18px );
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+    color: whitesmoke;
 }
-
 .title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
-
 .subtitle {
-  font-size: 1rem;
-  margin-bottom: 2rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
-
 .butn {
-  background: none;
-  border: none;
-  text-align: center;
-  font-size: 1rem;
-  color: whitesmoke;
-  background-color: #fa709a;
-  padding: 0.8rem 1.8rem;
-  border-radius: 2rem;
-  cursor: pointer;
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: #fa709a;
+    padding: 0.8rem 1.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
 }
-
 @-webkit-keyframes move {
   from {
     transform: translate(-100px, -50px) rotate(-90deg);
     border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-  }
-
+    }
   to {
     transform: translate(500px, 100px) rotate(-10deg);
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-  }
+    }
 }
-
 @keyframes move {
   from {
     transform: translate(-100px, -50px) rotate(-90deg);
     border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-  }
-
+    }
   to {
     transform: translate(500px, 100px) rotate(-10deg);
     border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-  }
+    }
 }
