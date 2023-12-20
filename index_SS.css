@@ -348,7 +348,8 @@ span:nth-child(18) {
     align-items: center;
     position: relative;
     justify-items: center;
-    margin: auto;
+    margin-left: 15%;
+    margin-right: 15%;
     justify-content: space-around;
     display: flex;
     margin-bottom: 20px;
@@ -366,8 +367,6 @@ span:nth-child(18) {
     backdrop-filter: blur(9.2px);
     -webkit-backdrop-filter: blur(9.2px);
     border: 1px solid rgba(0, 0, 0, 0.31);
-    position: relative;
-    border-radius: 4px;
     transition: 0.5s ease;
 }
 .box-2 {
@@ -393,8 +392,6 @@ span:nth-child(18) {
     backdrop-filter: blur(9.2px);
     -webkit-backdrop-filter: blur(9.2px);
     border: 1px solid rgba(68, 99, 240, 0.31);
-    position: relative;
-    border-radius: 4px;
     transition: 0.5s ease;
 }
 .box-3 {
