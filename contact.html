@@ -24,6 +24,25 @@
     <a href=""><button class="custom-btn btn-7"><span>ENGLISH</span></button></a>
 </div>
 
+<!--Card-->
+<div class="card">
+    <form action="#" method="#"> <!--Remplacer par controleur.action.php-->
+        <div class="registerForm">
+        <h1>M'envoyer un message</h1>
+        <p>Merci de bien vouloir remplir les champs suivants</p>
+        <!--Mail and subject inputs-->
+        <input type="text" placeholder="Votre email" name="email" id="email" required>
+        <input type="text" placeholder="Sujet" name="subject" id="subject" required>
+        <hr> <!--Break line-->
+        <!--Text area for message-->
+        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
+        <hr> <!--Break line-->
+        <!--Registration form submit button-->
+        <button type="submit" class="sendMail">Envoyer</button>
+    </div>  
+    </form>
+</div>
+
 <!--End of body-->
 </body>
 </html>
