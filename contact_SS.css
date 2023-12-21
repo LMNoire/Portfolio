@@ -255,3 +255,112 @@ button {
 .sendMail span:hover:after {
     width: 100%;
 }
+/*Github and linkedin boxes*/
+.boxgitlink {
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-around;
+    display: flex;
+    margin-bottom: 20px;
+}
+.box2 {
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    transition: 0.5s ease;
+}
+.box-2 {
+    background-image: url(github.png) ;
+    perspective: 600px;
+    margin: auto;
+    perspective-origin: 25% 75%;
+    transition: all 0.6s ease-in-out;
+    &:hover {
+      transform: rotateY(180deg);
+    }
+}
+.box3 {
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    margin: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(68, 99, 240, 0.31);
+    transition: 0.5s ease;
+}
+.box-3 {
+    background: url(linkedin.png);
+    perspective: 600px;
+    margin: auto;
+    perspective-origin: 25% 75%;
+    transition: all 0.6s ease-in-out;
+    &:hover {
+      transform: rotateY(180deg);
+    }
+}
+.gitlink,
+.box2,
+.box3 {
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.box2,
+.box3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.5s ease;
+}
+.box-2,
+.box-3 {
+    perspective: 600px;
+    perspective-origin: 25% 75%;
+    transition: all 0.6s ease-in-out;
+    margin: auto;
+}
+.box2:hover,
+.box3:hover,
+.box-2:hover,
+.box-3:hover {
+    transform: rotateY(180deg);
+}
+.git {
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 30px;
+}
+.linkedin {
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 30px;
+}
+@media screen and (max-width: 600px) {
+.git {
+    font-size: 20px;
+    }
+.linkedin {
+    font-size: 20px;
+    }
+}
