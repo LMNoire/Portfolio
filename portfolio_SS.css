@@ -241,6 +241,7 @@ span:nth-child(18) {
     text-decoration: underline;
 }
 .subtitle {
+    text-decoration: underline;
     font-size: 1rem;
     align-self: flex-start;
 }
