@@ -1,7 +1,7 @@
 /*Body*/
 body {
     /*Background*/
-    background: url(background.jpg) ;
+    background: url(Assets/background.jpg) ;
     background-position: center center ;
     background-repeat: no-repeat ;
     background-attachment: fixed ;
@@ -14,7 +14,7 @@ body {
 /*Background responsive mobile*/
 @media only screen and (max-width : 767px) {
 body {
-    background: url(backgroundMob.jpg) ;
+    background: url(Assets/backgroundMob.jpg) ;
     background-position: center center ;
     background-repeat: no-repeat ;
     background-attachment: fixed ;

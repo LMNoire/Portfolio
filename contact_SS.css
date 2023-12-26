@@ -1,7 +1,7 @@
 /*Body*/
 body {
     /*Background*/
-    background: url(background.jpg) ;
+    background: url(Assets/background.jpg) ;
     background-position: center center ;
     background-repeat: no-repeat ;
     background-attachment: fixed ;
@@ -14,7 +14,7 @@ body {
 /*Background responsive mobile*/
 @media only screen and (max-width : 767px) {
 body {
-    background: url(backgroundMob.jpg) ;
+    background: url(Assets/backgroundMob.jpg) ;
     background-position: center center ;
     background-repeat: no-repeat ;
     background-attachment: fixed ;
@@ -283,7 +283,7 @@ button {
     transition: 0.5s ease;
 }
 .box-2 {
-    background-image: url(github.png) ;
+    background-image: url(Assets/github.png) ;
     perspective: 600px;
     margin: auto;
     perspective-origin: 25% 75%;
@@ -308,7 +308,7 @@ button {
     transition: 0.5s ease;
 }
 .box-3 {
-    background: url(linkedin.png);
+    background: url(Assets/linkedin.png);
     perspective: 600px;
     margin: auto;
     perspective-origin: 25% 75%;
