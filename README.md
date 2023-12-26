@@ -17,3 +17,4 @@ N/A
 - La page contact + Formulaire d'envoi de message fonctionnel
 - Mettre en ligne
 - Tester responsive
+- Ajout d'une version anglaise
