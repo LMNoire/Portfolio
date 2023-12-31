@@ -10,7 +10,6 @@ HTML/CSS
 # Back
 N/A
 # A venir
-- La page portfolio
 - La page compétences
 - La page CV
 - La page à propos
