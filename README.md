@@ -1,20 +1,19 @@
 # Description
 Création d'un portfolio personnel avec CV 
 # Langages
-HTML/CSS
-# Front
+HTML/CSS/PHP
+# Front (v1.0.0)
 - Une page index qui renvoi vers le portfolio, les compétences, le CV, à propos puis contact.
 - Ajout d'éléments défilants sur l'index.
 - Une nav bar occupe le header.
 - Les différentes vues sont responsive.
-# Back
-N/A
+# Back (v1.0.0)
+- Utilisation de phpmailer pour le formulaire d'envoi de mail
 # A venir
-- La page portfolio
+- Tester responsive
 - La page compétences
 - La page CV
 - La page à propos
 - La page contact + Formulaire d'envoi de message fonctionnel
-- Mettre en ligne
-- Tester responsive
+- Mettre en ligne v1.0.0
 - Ajout d'une version anglaise
