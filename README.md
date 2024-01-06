@@ -10,11 +10,10 @@ HTML/CSS
 # Back
 N/A
 # A venir
-- La page portfolio
 - La page compétences
 - La page CV
 - La page à propos
 - La page contact + Formulaire d'envoi de message fonctionnel
-- Mettre en ligne
 - Tester responsive
+- Mettre en ligne la version 1.0
 - Ajout d'une version anglaise
