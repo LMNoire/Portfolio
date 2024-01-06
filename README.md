@@ -15,6 +15,6 @@ HTML/CSS/PHP
 - La page CV
 - La page à propos
 - La page contact + Formulaire d'envoi de message fonctionnel
-- Ajout d'un footer
+- Ajout d'un footer avec CGU
 - Mettre en ligne v1.0.0
 - Ajout d'une version anglaise
