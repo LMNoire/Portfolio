@@ -1,5 +1,3 @@
-# Description
-Création d'un portfolio personnel avec CV 
 # Langages
 HTML/CSS/PHP
 # Front (v1.0.0)
