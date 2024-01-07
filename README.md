@@ -9,7 +9,6 @@ HTML/CSS/PHP
 - Utilisation de phpmailer pour le formulaire d'envoi de mail
 # A venir
 - Tester responsive
-- La page compétences
 - La page à propos
 - Formulaire d'envoi de message fonctionnel
 - Ajout d'un footer avec CGU
