@@ -10,7 +10,6 @@ HTML/CSS/PHP
 # A venir
 - Tester responsive
 - La page compétences
-- La page CV
 - La page à propos
 - Formulaire d'envoi de message fonctionnel
 - Ajout d'un footer avec CGU
