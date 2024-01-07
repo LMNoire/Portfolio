@@ -105,3 +105,205 @@ button {
 .btn-7 span:hover:after {
     width: 100%;
 }
+/*Cards*/
+* {
+	box-sizing: border-box;
+}
+.container {
+    font-family: "Roboto";
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 400px;
+    min-height: 150px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 1rem;
+    padding: 1.5rem;
+    z-index: 10;
+    color: whitesmoke;
+    margin: 10px auto 20px auto;
+    -webkit-box-shadow: 0px 0px 9px 5px #ffffff; 
+    -moz-box-shadow: 0px 0px 9px 5px #ffffff; 
+    box-shadow: 0px 0px 9px 5px #ffffff;  
+}
+.title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    align-self: baseline;
+    text-decoration: underline;
+}
+.subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.butn {
+    background: none;
+    border: none;
+    text-align: center;
+    font-size: 1rem;
+    color: whitesmoke;
+    background-color: #fa709a;
+    padding: 0.8rem 1.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    margin-top: auto;
+}
+@media screen and (max-width: 600px) {
+.container {
+    display: inline-block;
+    justify-content: space-between ;
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    padding: 10px 40px;
+    }
+.card {
+    justify-items: center;
+    justify-content: space-between ;
+    position: relative;
+    }
+}
+@-webkit-keyframes move {
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+}
+@keyframes move {
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    }
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    }
+}
+/*Github and linkedin boxes*/
+.boxgitlink {
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5%;
+    justify-content: space-around;
+    display: flex;
+    margin-bottom: 20px;
+}
+.box2 {
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    transition: 0.5s ease;
+}
+.box-2 {
+    background-image: url(Assets/github.png) ;
+    perspective: 600px;
+    margin: auto;
+    perspective-origin: 25% 75%;
+    transition: all 0.6s ease-in-out;
+    &:hover {
+      transform: rotateY(180deg);
+    }
+}
+.box3 {
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(68, 99, 240, 0.31);
+    transition: 0.5s ease;
+}
+.box-3 {
+    background: url(Assets/linkedin.png);
+    perspective: 600px;
+    margin: auto;
+    perspective-origin: 25% 75%;
+    transition: all 0.6s ease-in-out;
+    &:hover {
+      transform: rotateY(180deg);
+    }
+}
+.gitlink,
+.box2,
+.box3 {
+    flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.box2,
+.box3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.5s ease;
+}
+.box-2,
+.box-3 {
+    perspective: 600px;
+    perspective-origin: 25% 75%;
+    transition: all 0.6s ease-in-out;
+    margin: auto;
+}
+.box2:hover,
+.box3:hover,
+.box-2:hover,
+.box-3:hover {
+    transform: rotateY(180deg);
+}
+.git {
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 30px;
+}
+.linkedin {
+    font-family: "Roboto";
+    color: #fff;
+    font-size: 30px;
+}
+@media screen and (max-width: 600px) {
+.git {
+    font-size: 20px;
+    }
+.linkedin {
+    font-size: 20px;
+    }
+}
