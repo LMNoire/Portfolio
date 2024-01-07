@@ -156,6 +156,82 @@ button {
     border-radius: 8px;    
     }
 }
+@media screen and (min-width: 250px) and (max-width: 349px) {
+    .card {
+        margin-left: 9px;
+        width: 300px;  
+        text-align: center;    
+        }
+    .frame {
+        width: 90%;
+        margin: 30px auto 10px auto;
+        text-align: center;
+        margin-left: 29px;
+    }
+    .boxgitlink {
+        flex: 0 0 auto;
+        align-items: center;
+        position: relative;
+        justify-items: center;
+        margin-left: 10px;
+
+        justify-content: space-around;
+        display: flex;
+        margin-bottom: 20px;
+    }
+    #message {
+        width: 150px;          
+        max-width: 280px;
+        height: 125px;         
+        min-height: 125px;     
+        max-height: 150px;     
+        padding: 0.5rem;       
+        border-radius: 8px;    
+        }
+    }
+@media screen and (min-width: 350px) and (max-width: 450px) {
+    .card {
+        width: 325px;  
+        text-align: center;    
+        }
+    #message {
+        width: 150px;          
+        max-width: 300px;
+        height: 125px;         
+        min-height: 125px;     
+        max-height: 150px;     
+        padding: 0.5rem;       
+        border-radius: 8px;    
+        }
+    }
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .card {
+        width: 500px;      
+        }
+    #message {
+        width: 150px;          
+        max-width: 400px;
+        height: 125px;         
+        min-height: 125px;     
+        max-height: 150px;     
+        padding: 0.5rem;       
+        border-radius: 8px;    
+        }
+    }
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .card {
+        width: 600px;      
+        }
+    #message {
+        width: 150px;          
+        max-width: 500px;
+        height: 125px;         
+        min-height: 125px;     
+        max-height: 150px;     
+        padding: 0.5rem;       
+        border-radius: 8px;    
+        }
+    }
 /*Message textarea*/
 #message {
     width: 900px;          

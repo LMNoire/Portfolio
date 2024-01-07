@@ -256,7 +256,23 @@ span:nth-child(18) {
     cursor: pointer;
     margin-top: auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 479px) {
+    .container {
+        display: inline-block;
+        justify-content: space-between ;
+        position: relative;
+        align-items: center;
+        justify-items: center;
+        padding: 10px 40px;
+        }
+    .card {
+        justify-items: center;
+        justify-content: space-between ;
+        position: relative;
+        width: calc(90% - 10px);
+        }
+    }
+@media screen and (min-width: 480px) and (max-width: 600px) {
 .container {
     display: inline-block;
     justify-content: space-between ;

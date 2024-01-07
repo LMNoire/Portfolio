@@ -131,7 +131,12 @@ div.slide-left .slide-left {
 }
 }
 /*Sliding name responsive*/
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 280px) and (max-width: 450px) {
+    div.slide-left {
+    font-size: 20px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
     div.slide-left {
     font-size: 25px;
     }
@@ -155,7 +160,12 @@ h1 {
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 /*Dev full stack h1 responsive*/
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 280px) and (max-width: 450px) {
+    h1 {
+    font-size: 30px;
+    }
+}
+@media screen and (min-width: 451px) and (max-width: 600px) {
     h1 {
     font-size: 40px;
     }
@@ -306,7 +316,29 @@ span:nth-child(18) {
     cursor: pointer;
     margin-top: auto;
 }
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 250px) and (max-width: 479px) {
+    .container {
+        display: inline-block;
+        justify-content: space-between ;
+        position: relative;
+        align-items: center;
+        justify-items: center;
+        padding: 10px 40px;
+        }
+    .card {
+        justify-items: center;
+        justify-content: space-between ;
+        position: relative;
+        width: calc(90% - 5px); 
+        }
+        .title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            align-self: center;
+            text-decoration: underline;
+        }
+    }
+@media screen and (min-width: 480px) and (max-width: 600px) {
 .container {
     display: inline-block;
     justify-content: space-between ;
@@ -319,6 +351,40 @@ span:nth-child(18) {
     justify-items: center;
     justify-content: space-between ;
     position: relative;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 899px) {
+    .container {
+        display: inline-block;
+        justify-content: space-between ;
+        position: relative;
+        align-items: center;
+        justify-items: center;
+        padding: 10px 40px;
+        }
+    .card {
+        justify-items: center;
+        justify-content: space-between ;
+        position: relative;
+        }
+    }
+@media screen and (min-width: 900px) and (max-width: 1299px) {
+    .container {
+        display: flex;              /* Set the container as a flex container */
+        justify-content: space-between; /* Distribute space between items */
+        position: relative;
+        align-items: center;
+        justify-items: center;
+        padding: 10px 40px;
+        flex-wrap: nowrap;          /* Prevent items from wrapping */
+    }
+
+    .card {
+        justify-items: center;
+        justify-content: flex-start; /* Align content to the start of each card */
+        position: relative;
+        width: calc(30% - 10px);    /* Adjust width to accommodate space between cards */
+        flex-shrink: 0;             /* Prevent cards from shrinking */
     }
 }
 @-webkit-keyframes move {

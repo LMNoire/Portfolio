@@ -8,7 +8,6 @@ HTML/CSS/PHP
 # Back (v1.0.0)
 - Utilisation de phpmailer pour le formulaire d'envoi de mail
 # A venir
-- Tester responsive
 - Formulaire d'envoi de message fonctionnel
 - Ajout d'un footer avec CGU
 - Mettre en ligne v1.0.0
