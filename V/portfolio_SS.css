@@ -1,28 +1,29 @@
 /*Body*/
 body {
     /*Background*/
-    background: url(Assets/background.jpg) ;
-    background-position: center center ;
-    background-repeat: no-repeat ;
-    background-attachment: fixed ;
-    background-size: cover ;
-    background-color: black ;
-    margin: 0 ;
-    justify-content: center;
-    align-items: center;
+        background: url(Assets/background.jpg) ;
+        background-position: center center ;
+        background-repeat: no-repeat ;
+        background-attachment: fixed ;
+        background-size: cover ;
+        background-color: black ;
+        margin: 0 ;
+        justify-content: center;
+        align-items: center;
     }
-/*Background responsive mobile*/
-@media only screen and (max-width : 767px) {
-body {
-    background: url(Assets/backgroundMob.jpg) ;
-    background-position: center center ;
-    background-repeat: no-repeat ;
-    background-attachment: fixed ;
-    background-size: cover ;
-    background-color: black ;
-    margin: 0 ;
+    /*Background responsive mobile*/
+    @media only screen and (max-width : 767px) {
+    body {
+        background: url(Assets/background.jpg) ;
+        background-position: center center ;
+        background-repeat: no-repeat ;
+        background-attachment: scroll ;
+        background-size: cover ;
+        background-color: black ;
+        margin: 0 ;
+        }
     }
-}
+
 /*Header navigation bar*/
 .frame {
     width: 90%;

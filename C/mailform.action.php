@@ -6,6 +6,7 @@ require '../M/vendor/phpmailer/phpmailer/src/Exception.php';
 require '../M/vendor/phpmailer/phpmailer/src/PHPMailer.php';
 require '../M/vendor/phpmailer/phpmailer/src/SMTP.php';
 
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
     $subject = htmlspecialchars($_POST["subject"]);
@@ -23,14 +24,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.office365.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'selim.coulombel@live.fr';
-        $mail->Password   = 'Secret';
+        $mail->Username = 'selim.coulombel@live.fr';
+        $mail->Password = 'Jazzhotel2011';
         $mail->Port       = 587;
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;  // Use STARTTLS
+        $mail->SMTPSecure = 'tls';  // Use STARTTLS
     
 
         
-$mail->SMTPDebug = 2;  // Enable verbose debug output
+// $mail->SMTPDebug = 2;
 
         // Recipients
         $mail->setFrom($email);  // Set the sender's email address

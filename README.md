@@ -6,8 +6,8 @@ HTML/CSS/PHP
 - Une nav bar occupe le header.
 - Les différentes vues sont responsive.
 # Back
-- Utilisation de phpmailer pour le formulaire d'envoi de mail.
+- Utilisation de phpmailer pour le formulaire d'envoi de mail
 # A venir
-- Page de succès ou d'erreur après envoi de mail.
-- Ajout d'un footer avec CGU.
-- Ajout d'une version anglaise.
+- Page de succès ou d'erreur après l'envoi de mail
+- Ajout d'un footer avec CGU
+- Ajout d'une version anglaise
