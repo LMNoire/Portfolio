@@ -1,7 +1,7 @@
 # Description
 Création d'un portfolio professionnel suite à une formation de développeur full stack en cours (https://www.coulombelselim.fr)
 # Langages
-HTML/CSS/PHP
+HTML/CSS/PHP/Javascrpit
 # Front
 - Une page index qui renvoi vers le portfolio, les compétences, le CV, à propos puis contact.
 - Ajout d'éléments défilants sur l'index.
@@ -10,6 +10,5 @@ HTML/CSS/PHP
 # Back
 - Utilisation de phpmailer pour le formulaire d'envoi de mail
 # A venir
-- Page de succès ou d'erreur après l'envoi de mail
 - Ajout d'un footer avec CGU
 - Ajout d'une version anglaise
