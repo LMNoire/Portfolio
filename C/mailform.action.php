@@ -24,8 +24,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->isSMTP();
         $mail->Host       = 'smtp.office365.com';
         $mail->SMTPAuth   = true;
-        $mail->Username = 'selim.coulombel@live.fr';
-        $mail->Password = 'Jazzhotel2011';
+        // Load email configuration from external file
+        $config = include('../../../config/config.php');
+        $mail->Username = $config['email']['username'];
+        $mail->Password = $config['email']['password'];
         $mail->Port       = 587;
         $mail->SMTPSecure = 'tls';  // Use STARTTLS
     
@@ -48,4 +50,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "Erreur lors de l'envoi du message. Mailer Error: {$mail->ErrorInfo}";
     }
 }
-?>
