@@ -12,4 +12,4 @@ HTML/CSS/PHP/Javascript
 # A venir
 - Ajout d'un footer avec CGU
 - Ajout d'une version anglaise
-- Parce que les compétences évoluent au cours de la formation et que l'on peut toujours mieux faire, une V2 est en préparation ! 
+- Parce que les compétences évoluent au cours de la formation et que l'on peut toujours mieux faire, une v2 est en préparation ! 
