@@ -10,7 +10,7 @@ HTML/CSS/PHP/Javascript
 # Back
 - Utilisation de phpmailer pour le formulaire d'envoi de mail
 # A venir
-- Ajout d'une searchbar sur la page compétences pour une recherche plus facile et rapide
+- Ajout d'une searchbar sur la page compétences et réalisations pour une recherche plus facile et rapide
 - Ajout d'un bouton de retour en haut de la page
 - Ajout d'un footer avec CGU
 - Ajout d'une version anglaise
