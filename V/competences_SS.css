@@ -120,6 +120,12 @@ button {
     position: relative;
     overflow: hidden;
 }
+/*Formation*/
+.formation {
+    font-family: "Roboto";
+    color: #FFFFFF;
+    text-align: center;
+}
 /*Skills cards*/
 .card {
     display: flex;
@@ -296,6 +302,7 @@ li {
         position: relative;
         width: 400px;
         flex-direction: column; 
+        height: 250px;
     }
     .title {
         font-size: 1.1rem;
@@ -322,7 +329,7 @@ li {
         position: relative;
         width: calc(70% - 20px);
         flex-direction: column;
-        height: 230px;
+        height: 250px;
     }
     .title {
         font-size: 1.1rem;
