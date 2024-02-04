@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Contact</title>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS link-->
+    <link rel="stylesheet" href="../contact_SS.css">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <script>
+        function sendForm() {
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            const xhr = new XMLHttpRequest();
+
+            xhr.open('POST', '../../C/mailform.action.php', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onload = function () {
+                if (this.status === 200) {
+                    // Display the result message in a modal popup
+                    showModal(this.responseText);
+                } else {
+                    showModal('An error has occurred.');
+                }
+            };
+
+            xhr.send(`email=${email}&subject=${subject}&message=${message}`);
+            return false;
+        }
+
+        function showModal(message) {
+            // Create a modal dialog
+            const modal = document.createElement('div');
+            modal.className = 'modal';
+            modal.innerHTML = `
+                <div class="modal-content">
+                    <span class="close-button" onclick="closeModal()">&times;</span>
+                    <p>${message}</p>
+                </div>
+            `;
+
+            // Append modal to the body
+            document.body.appendChild(modal);
+        }
+
+        function closeModal() {
+            // Remove the modal from the DOM
+            const modal = document.querySelector('.modal');
+            if (modal) {
+                modal.remove();
+            }
+        }
+    </script>
+</head>
+
+<body>
+<!--Navigation bar-->
+<div class="frame">
+    <a href="en_index.html"><button class="custom-btn btn-7"><span>HOME</span></button></a>
+    <a href="en_portfolio.html"><button class="custom-btn btn-7"><span>PORTFOLIO</span></button></a>
+    <a href="en_competences.html"><button class="custom-btn btn-7"><span>SKILLS</span></button></a>
+    <a href="en_cv.html"><button class="custom-btn btn-7"><span>RESUME</span></button></a>
+    <a href="en_apropos.html"><button class="custom-btn btn-7"><span>ABOUT ME</span></button></a>
+    <a href="en_contact.html"><button class="custom-btn btn-7"><span>CONTACT</span></button></a>
+    <a href="../index.html"><button class="custom-btn btn-7"><span>FRENCH</span></button></a>
+</div>
+
+
+<!--Card-->
+<div class="card">
+    <form onsubmit="return sendForm();">
+        <div class="registerForm">
+        <h1>Send a message</h1>
+        <p>Please fill in the following fields</p>
+        <!--Mail and subject inputs-->
+        <input type="text" placeholder="Your email" name="email" id="email" required>
+        <input type="text" placeholder="Suject" name="subject" id="subject" required>
+        <hr> <!--Break line-->
+        <!--Text area for message-->
+        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+        <hr> <!--Break line-->
+        <!--Registration form submit button-->
+        <button type="submit" class="sendMail">Send</button>
+    </div>  
+    </form>
+</div>
+
+<!--Github and linkedin-->
+<div class="boxgitlink">
+    <p class="git">GITHUB</p>
+    <a href="https://github.com/LMNoire"><div class="box2 box-2"></div></a>
+    <a href="https://linkedin.com/in/selim-coulombel-9745442a4"><div class="box3 box-3"></div></a>
+    <p class="linkedin">LINKEDIN</p>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.querySelector('form');
+    
+    form.addEventListener('submit', function(event) {
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Simple email validation (you can use a more robust regex pattern)
+        if (!email.includes('@')) {
+            alert('Please enter a valide email.');
+            event.preventDefault(); // Prevent form submission
+        }
+        
+        // Check if subject and message are not empty
+        if (!subject.trim() || !message.trim()) {
+            alert('Please fill in the following fields.');
+            event.preventDefault(); // Prevent form submission
+        }
+    });
+});
+</script>
+<!--End of body-->
+</body>
+</html>
