@@ -1,3 +1,8 @@
+* {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
 /*Body*/
 body {
     /*Background*/
@@ -10,19 +15,19 @@ body {
     margin: 0 ;
     justify-content: center;
     align-items: center;
-    }
+}
 /*Background responsive mobile*/
 @media only screen and (max-width : 767px) {
-    body {
-        background: url(Assets/background.jpg) ;
-        background-position: center center ;
-        background-repeat: no-repeat ;
-        background-attachment: scroll ;
-        background-size: cover ;
-        background-color: black ;
-        margin: 0 ;
-        }
+body {
+    background: url(Assets/background.jpg) ;
+    background-position: center center ;
+    background-repeat: no-repeat ;
+    background-attachment: scroll ;
+    background-size: cover ;
+    background-color: black ;
+    margin: 0 ;
     }
+}
 /*Header navigation bar*/
 .frame {
     width: 90%;
@@ -33,11 +38,9 @@ button {
     margin: 10px;
 }
 .custom-btn {
-    color: #fff;
     width: 130px;
     height: 40px;
     padding: 10px 25px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -46,7 +49,6 @@ button {
     display: inline-block;
 }
 .btn-7 {
-    color: #fff;
     line-height: 40px;
     padding: 0;
     border: none;
@@ -106,33 +108,27 @@ button {
     width: 100%;
 }
 /*Container*/
-* {
-    box-sizing: border-box;
-}
 .container {
-    font-family: "Roboto";
     margin-top: 2%;
     width: 100%;
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    align-items: flex-start; 
+    align-items: flex-start;
     position: relative;
     overflow: hidden;
 }
 /*Formation*/
 .formation {
-    font-family: "Roboto";
-    color: #FFFFFF;
     text-align: center;
 }
 /*Skills cards*/
 .card {
     display: flex;
-    flex-direction: column-reverse; 
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: flex-end;
-    width: calc(33.33% - 40px); 
+    width: calc(33.33% - 40px);
     min-height: 150px;
     height: 200px;
     background: rgba(255, 255, 255, 0.15);
@@ -143,280 +139,139 @@ button {
     border-radius: 1rem;
     padding: 1.5rem;
     z-index: 10;
-    color: whitesmoke;
-    margin: 10px 10px 30px 10px; 
-    -webkit-box-shadow: 0px 0px 9px 5px #ffffff; 
-    -moz-box-shadow: 0px 0px 9px 5px #ffffff; 
-    box-shadow: 0px 0px 9px 5px #ffffff;  
+    margin: 10px 10px 30px 10px;
+    -webkit-box-shadow: 0px 0px 9px 5px #ffffff;
+    -moz-box-shadow: 0px 0px 9px 5px #ffffff;
+    box-shadow: 0px 0px 9px 5px #ffffff;
 }
 .title {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-    align-self: center; 
+    align-self: center;
     text-decoration: underline;
-    order: 2; 
+    order: 2;
 }
 .content {
     display: flex;
-    justify-content: space-between; 
-    width: 100%; 
-    padding: 0 20px; 
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 20px;
     text-align: center;
 }
 .column {
-    flex: 1; 
+    flex: 1;
 }
 ul {
-    list-style-type: none; 
+    list-style-type: none;
     padding: 0;
 }
 li {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 .content2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     width: 80%;
-    max-width: 100%; 
+    max-width: 100%;
     text-align: center;
 }
-@media screen and (min-width: 250px) and (max-width: 379px) {
+/*Media Queries*/
+@media screen and (max-width: 249px) {
     .container {
-        display: flex;              
-        justify-content: center;    
-        align-items: center;         
         padding: 10px 40px;
     }
-
+}
+@media screen and (min-width: 250px) and (max-width: 379px) {
     .card {
-        justify-items: center;
-        justify-content: flex-start;
-        position: relative;
-        max-width: 230px;        
-        width: 100%;                
-        flex-direction: column;     
-        margin-bottom: 20px;  
+        max-width: 230px;
+        width: 100%;
         height: 380px;
-    }
-    .card ul {
-        padding: 0; 
-        margin: 0; 
-        display: flex;
-        flex-direction: column;
-    }
-    #lang,
-    #com,
-    #others {
-        display: flex;
-        flex-direction: column;
-    }
-    .card li {
-        list-style-type: none; 
-    }
-    .title {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-        align-self: center;
-        text-align: center;
-        text-decoration: underline;
-        order: -1;
-        margin-top: 10px;
     }
 }
 @media screen and (min-width: 380px) and (max-width: 399px) {
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;    
-        flex-direction: column;  
-        position: relative;
+    .container,
+    .card {
+        flex-direction: column;
         padding: 10px 40px;
     }
     .card {
-        justify-items: center;
-        justify-content: flex-start; 
-        position: relative;
         width: calc(90% - 5px);
         height: 250px;
-        flex-direction: column;     
-        margin-bottom: 20px;  
         overflow: hidden;
-    }
-    
-.card ul {
-    padding: 0; 
-    margin: 0; 
-}
-.card li {
-    list-style-type: none; 
-}
-.title {
-    font-size: 1.1rem;
-        margin-bottom: 1rem;
-        align-self: center;
-        text-decoration: underline;
-        order: -1;
-        margin-top: 10px;
     }
 }
 @media screen and (min-width: 400px) and (max-width: 479px) {
-    .container {
-        display: flex; 
-        justify-content: center; 
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-    }
     .card {
-        justify-items: center;
-        justify-content: flex-start; 
-        position: relative;
         width: 400px;
         height: 250px;
-        flex-direction: column; 
-    }
-    .title {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-        align-self: center; 
-        text-decoration: underline;
-        order: -1; 
-        margin-top: 10px; 
     }
 }
 @media screen and (min-width: 480px) and (max-width: 600px) {
-    .container {
-        display: flex; 
-        justify-content: center; 
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-    }
     .card {
-        justify-items: center;
-        justify-content: flex-start; 
-        position: relative;
         width: 400px;
-        flex-direction: column; 
         height: 250px;
-    }
-    .title {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-        align-self: center; 
-        text-decoration: underline;
-        order: -1; 
-        margin-top: 10px; 
     }
 }
 @media screen and (min-width: 601px) and (max-width: 899px) {
-    .container {
-        display: flex; 
-        justify-content: center; 
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-
-    }
     .card {
-        justify-items: center;
-        justify-content: flex-start;
-        position: relative;
         width: calc(70% - 20px);
-        flex-direction: column;
         height: 250px;
-    }
-    .title {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-        align-self: center; 
-        text-decoration: underline;
-        order: -1; 
-        margin-top: 10px; 
     }
 }
 @media screen and (min-width: 900px) and (max-width: 1199px) {
     .container {
-        display: flex; 
-        justify-content: space-between;
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
     .card {
-        justify-items: center;
-        justify-content: flex-start;
-        position: relative;
         width: calc(50% - 20px);
         height: 230px;
-        flex-direction: column;
-        margin-bottom: 20px;
-        box-sizing: border-box; 
-    }
-    .title {
-        font-size: 1.1rem;
-        margin-bottom: 1rem;
-        align-self: center;
-        text-decoration: underline;
-        order: -1;
-        margin-top: 10px;
     }
 }
-    @-webkit-keyframes move {
-      from {
+/*Keyframes*/
+@-webkit-keyframes move {
+    from {
         transform: translate(-100px, -50px) rotate(-90deg);
         border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-        }
-      to {
+    }
+    to {
         transform: translate(500px, 100px) rotate(-10deg);
         border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-        }
     }
-    @keyframes move {
-      from {
+}
+@keyframes move {
+    from {
         transform: translate(-100px, -50px) rotate(-90deg);
         border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-        }
-      to {
+    }
+    to {
         transform: translate(500px, 100px) rotate(-10deg);
         border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-        }
     }
-/*Stack technique h1*/
+}
+/* Stack technique h1 */
 h1 {
-    font-family: "Roboto";
-    color: #FFFFFF;
     font-size: 60px;
-    width: 100%;
-    text-align: center;
     width: fit-content;
     margin: 30px auto;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    text-align: center;
 }
-/*Stack technique h1 responsive*/
+/* Stack technique h1 responsive */
 @media screen and (max-width: 600px) {
     h1 {
-    font-size: 40px;
+        font-size: 40px;
     }
 }
-@media screen and (min-width: 601px) {
-    h1 {
-    font-size: 60px;
-    }
-}
+/* Keyframes */
 @keyframes scale {
     100% {
-    transform: scale(1);
+        transform: scale(1);
     }
 }
+/*Fade-in animation for span elements*/
 span {
     display: inline-block;
     opacity: 0;
@@ -428,7 +283,7 @@ span:nth-child(1) {
 span:nth-child(2) {
     animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
-  span:nth-child(3) {
+span:nth-child(3) {
     animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(4) {
@@ -478,7 +333,7 @@ span:nth-child(18) {
 }
 @keyframes fade-in {
     100% {
-    opacity: 1;
-    filter: blur(0);
+        opacity: 1;
+        filter: blur(0);
     }
 }
