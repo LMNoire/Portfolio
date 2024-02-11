@@ -1,29 +1,25 @@
-/*Body*/
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
 body {
-    /*Background*/
-        background: url(Assets/background.jpg) ;
-        background-position: center center ;
-        background-repeat: no-repeat ;
-        background-attachment: fixed ;
-        background-size: cover ;
-        background-color: black ;
-        margin: 0 ;
-        justify-content: center;
-        align-items: center;
-    }
-    /*Background responsive mobile*/
-    @media only screen and (max-width : 767px) {
+    /* Background */
+    background-image: url('Assets/background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+    justify-content: center; 
+    align-items: center;
+}
+/* Background responsive for mobile */
+@media only screen and (max-width: 767px) {
     body {
-        background: url(Assets/background.jpg) ;
-        background-position: center center ;
-        background-repeat: no-repeat ;
-        background-attachment: scroll ;
-        background-size: cover ;
-        background-color: black ;
-        margin: 0 ;
-        }
+        background-attachment: scroll; 
     }
-
+}
 /*Header navigation bar*/
 .frame {
     width: 90%;
@@ -34,11 +30,9 @@ button {
     margin: 10px;
 }
 .custom-btn {
-    color: #fff;
     width: 130px;
     height: 40px;
     padding: 10px 25px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -47,7 +41,6 @@ button {
     display: inline-block;
 }
 .btn-7 {
-    color: #fff;
     line-height: 40px;
     padding: 0;
     border: none;
@@ -108,8 +101,6 @@ button {
 }
 /*Réalisations h1*/
 h1 {
-    font-family: "Roboto";
-    color: #FFFFFF;
     font-size: 60px;
     width: 100%;
     text-align: center;
@@ -118,20 +109,15 @@ h1 {
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
-/*Réalisations h1 responsive*/
+/* Réalisations h1 responsive */
 @media screen and (max-width: 600px) {
     h1 {
-    font-size: 40px;
+        font-size: 40px;
     }
 }
 @media screen and (min-width: 601px) {
     h1 {
-    font-size: 60px;
-    }
-}
-@keyframes scale {
-    100% {
-    transform: scale(1);
+        font-size: 60px;
     }
 }
 span {
@@ -200,11 +186,7 @@ span:nth-child(18) {
     }
 }
 /*Cards*/
-* {
-	box-sizing: border-box;
-}
 .container {
-    font-family: "Roboto";
     margin-top: 4%;
     width: 100%;
     display: flex;
@@ -219,6 +201,7 @@ span:nth-child(18) {
     align-items: center;
     justify-content: flex-end;
     width: 400px;
+    max-width: 400px;
     min-height: 150px;
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -228,11 +211,10 @@ span:nth-child(18) {
     border-radius: 1rem;
     padding: 0.5rem;
     z-index: 10;
-    color: whitesmoke;
     margin: 20px auto;
-    -webkit-box-shadow:0px 0px 15px 5px #ffffff ;
-    -moz-box-shadow:0px 0px 15px 5px #ffffff ;
-    box-shadow:0px 0px 15px 5px #ffffff ;
+    -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
+    -moz-box-shadow: 0px 0px 15px 5px #ffffff;
+    box-shadow: 0px 0px 15px 5px #ffffff;
 }
 .title {
     font-size: 1.5rem;
@@ -249,61 +231,24 @@ span:nth-child(18) {
     border: none;
     text-align: center;
     font-size: 1rem;
-    color: whitesmoke;
     background-color: #fa709a;
     padding: 0.8rem 1.8rem;
     border-radius: 2rem;
     cursor: pointer;
     margin-top: auto;
 }
-@media screen and (max-width: 479px) {
-    .container {
-        display: inline-block;
-        justify-content: space-between ;
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-        }
-    .card {
-        justify-items: center;
-        justify-content: space-between ;
-        position: relative;
-        width: calc(90% - 10px);
-        }
-    }
-@media screen and (min-width: 480px) and (max-width: 600px) {
+/*Responsive cards*/
 .container {
     display: inline-block;
-    justify-content: space-between ;
+    justify-content: space-between;
     position: relative;
     align-items: center;
     justify-items: center;
     padding: 10px 40px;
-    }
+}
 .card {
     justify-items: center;
-    justify-content: space-between ;
+    justify-content: space-between;
     position: relative;
-    }
-}
-@-webkit-keyframes move {
-  from {
-    transform: translate(-100px, -50px) rotate(-90deg);
-    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
-  to {
-    transform: translate(500px, 100px) rotate(-10deg);
-    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
-}
-@keyframes move {
-  from {
-    transform: translate(-100px, -50px) rotate(-90deg);
-    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
-  to {
-    transform: translate(500px, 100px) rotate(-10deg);
-    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
+    width: calc(90% - 10px);
 }
