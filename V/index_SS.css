@@ -1,6 +1,11 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    box-sizing: border-box;
+}
 /*Body*/
 body {
-/*Background*/
+    /*Background*/
     background: url(Assets/background.jpg) ;
     background-position: center center ;
     background-repeat: no-repeat ;
@@ -33,11 +38,9 @@ button {
     margin: 10px;
 }
 .custom-btn {
-    color: #fff;
     width: 130px;
     height: 40px;
     padding: 10px 25px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -46,7 +49,6 @@ button {
     display: inline-block;
 }
 .btn-7 {
-    color: #fff;
     line-height: 40px;
     padding: 0;
     border: none;
@@ -109,47 +111,43 @@ button {
 div.slide-left {
     display: inline-block;
     width: fit-content;
-    overflow:hidden;
-    font-family: "Roboto";
-    color: #FFFFFF;
+    overflow: hidden;
     font-size: 35px;
     text-align: center;
     margin-left: 15%;
 }
-/*Sliding name animation*/
+/* Sliding name animation */
 div.slide-left .slide-left {
     animation: slide-left 5s;
 }
 @keyframes slide-left {
     from {
-    margin-left: 100%;
-    width: 300%; 
-}
+        margin-left: 100%;
+        width: 300%; 
+    }
     to {
-    margin-left: 50%;
-    width: 100%;
-}
+        margin-left: 50%;
+        width: 100%;
+    }
 }
 /*Sliding name responsive*/
-@media screen and (min-width: 280px) and (max-width: 450px) {
+@media screen and (max-width: 450px) {
     div.slide-left {
-    font-size: 20px;
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 451px) and (max-width: 600px) {
     div.slide-left {
-    font-size: 25px;
+        font-size: 25px;
     }
 }
 @media screen and (min-width: 601px) {
     div.slide-left {
-    font-size: 35px;
+        font-size: 35px;
     }
 }
 /*Dev full stack h1*/
 h1 {
-    font-family: "Roboto";
-    color: #FFFFFF;
     font-size: 60px;
     width: 100%;
     text-align: center;
@@ -160,40 +158,28 @@ h1 {
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
 /*Dev full stack h1 responsive*/
-@media screen and (min-width: 280px) and (max-width: 450px) {
-    h1 {
-    font-size: 30px;
-    }
-}
-@media screen and (min-width: 451px) and (max-width: 600px) {
-    h1 {
-    font-size: 40px;
-    }
-}
-@media screen and (min-width: 601px) {
-    h1 {
-    font-size: 60px;
-    }
-}
-span.texth1 {
-    font-family: "Roboto";
-    color: #FFFFFF;
-}
 @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
     span.texth1 {
-    font-size: 20px;
+        font-size: 20px;
     }
 }
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 601px) and (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
     span.texth1 {
-      font-size: 50px;
+        font-size: 50px;
     }
 }
-@keyframes scale {
-    100% {
-    transform: scale(1);
+@media screen and (min-width: 801px) {
+    h1 {
+        font-size: 60px;
     }
 }
+/*Letters span*/
 span {
     display: inline-block;
     opacity: 0;
@@ -260,11 +246,7 @@ span:nth-child(18) {
     }
 }
 /*Cards*/
-* {
-	box-sizing: border-box;
-}
 .container {
-    font-family: "Roboto";
     margin-top: 2%;
     width: 100%;
     display: flex;
@@ -281,7 +263,7 @@ span:nth-child(18) {
     width: 400px;
     min-height: 150px;
     background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37);
+    box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #ffffff;
     backdrop-filter: blur(18px);
     -webkit-backdrop-filter: blur(18px);
     border: 1px solid rgba(255, 255, 255, 0.18);
@@ -290,9 +272,6 @@ span:nth-child(18) {
     z-index: 10;
     color: whitesmoke;
     margin: 10px auto 20px auto;
-    -webkit-box-shadow: 0px 0px 9px 5px #ffffff; 
-    -moz-box-shadow: 0px 0px 9px 5px #ffffff; 
-    box-shadow: 0px 0px 9px 5px #ffffff;  
 }
 .title {
     font-size: 1.5rem;
@@ -304,106 +283,61 @@ span:nth-child(18) {
     margin-bottom: 2rem;
 }
 .butn {
-    background: none;
+    background: #fa709a;
     border: none;
     text-align: center;
     font-size: 1rem;
     color: whitesmoke;
-    background-color: #fa709a;
     padding: 0.8rem 1.8rem;
     border-radius: 2rem;
     cursor: pointer;
     margin-top: auto;
 }
-@media screen and (min-width: 250px) and (max-width: 479px) {
+/*Responsive cards*/
+@media screen and (min-width: 250px) and (max-width: 1299px) {
     .container {
         display: inline-block;
-        justify-content: space-between ;
+        justify-content: space-between;
         position: relative;
         align-items: center;
         justify-items: center;
         padding: 10px 40px;
-        }
+    }
     .card {
         justify-items: center;
-        justify-content: space-between ;
+        justify-content: space-between;
         position: relative;
-        width: calc(90% - 5px); 
-        }
-        .title {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            align-self: center;
-            text-decoration: underline;
-        }
-    }
-@media screen and (min-width: 480px) and (max-width: 600px) {
-.container {
-    display: inline-block;
-    justify-content: space-between ;
-    position: relative;
-    align-items: center;
-    justify-items: center;
-    padding: 10px 40px;
-    }
-.card {
-    justify-items: center;
-    justify-content: space-between ;
-    position: relative;
     }
 }
-@media screen and (min-width: 601px) and (max-width: 899px) {
-    .container {
-        display: inline-block;
-        justify-content: space-between ;
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-        }
-    .card {
-        justify-items: center;
-        justify-content: space-between ;
-        position: relative;
-        }
-    }
 @media screen and (min-width: 900px) and (max-width: 1299px) {
     .container {
-        display: flex;              /* Set the container as a flex container */
-        justify-content: space-between; /* Distribute space between items */
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-        flex-wrap: nowrap;          /* Prevent items from wrapping */
+        flex-wrap: nowrap;
     }
 
     .card {
-        justify-items: center;
-        justify-content: flex-start; /* Align content to the start of each card */
-        position: relative;
-        width: calc(30% - 10px);    /* Adjust width to accommodate space between cards */
-        flex-shrink: 0;             /* Prevent cards from shrinking */
+        justify-content: flex-start;
+        width: calc(30% - 10px);
+        flex-shrink: 0;
     }
 }
 @-webkit-keyframes move {
-  from {
-    transform: translate(-100px, -50px) rotate(-90deg);
-    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    from {
+        transform: translate(-100px, -50px) rotate(-90deg);
+        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
     }
-  to {
-    transform: translate(500px, 100px) rotate(-10deg);
-    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    to {
+        transform: translate(500px, 100px) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
     }
 }
 @keyframes move {
-  from {
-    transform: translate(-100px, -50px) rotate(-90deg);
-    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+    from {
+        transform: translate(-100px, -50px) rotate(-90deg);
+        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
     }
-  to {
-    transform: translate(500px, 100px) rotate(-10deg);
-    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+    to {
+        transform: translate(500px, 100px) rotate(-10deg);
+        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
     }
 }
 /*Github and linkedin boxes*/
@@ -491,27 +425,22 @@ span:nth-child(18) {
     transition: all 0.6s ease-in-out;
     margin: auto;
 }
+/*Github & Linkedin img rotate when hover*/
 .box2:hover,
 .box3:hover,
 .box-2:hover,
 .box-3:hover {
     transform: rotateY(180deg);
 }
-.git {
-    font-family: "Roboto";
-    color: #fff;
-    font-size: 30px;
-}
+/*Github & Linkedin text*/
+.git,
 .linkedin {
-    font-family: "Roboto";
-    color: #fff;
     font-size: 30px;
 }
+/*Responsive Github & Linkedin text*/
 @media screen and (max-width: 600px) {
-.git {
-    font-size: 20px;
-    }
-.linkedin {
-    font-size: 20px;
+    .git, 
+    .linkedin {
+        font-size: 20px;
     }
 }
