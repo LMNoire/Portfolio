@@ -1,3 +1,8 @@
+* {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
 /*Body*/
 body {
     /*Background*/
@@ -10,19 +15,19 @@ body {
     margin: 0 ;
     justify-content: center;
     align-items: center;
-    }
+}
 /*Background responsive mobile*/
 @media only screen and (max-width : 767px) {
-    body {
-        background: url(Assets/background.jpg) ;
-        background-position: center center ;
-        background-repeat: no-repeat ;
-        background-attachment: scroll ;
-        background-size: cover ;
-        background-color: black ;
-        margin: 0 ;
-        }
+body {
+    background: url(Assets/background.jpg) ;
+    background-position: center center ;
+    background-repeat: no-repeat ;
+    background-attachment: scroll ;
+    background-size: cover ;
+    background-color: black ;
+    margin: 0 ;
     }
+}
 /*Header navigation bar*/
 .frame {
     width: 90%;
@@ -33,11 +38,9 @@ button {
     margin: 10px;
 }
 .custom-btn {
-    color: #fff;
     width: 130px;
     height: 40px;
     padding: 10px 25px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -46,7 +49,6 @@ button {
     display: inline-block;
 }
 .btn-7 {
-    color: #fff;
     line-height: 40px;
     padding: 0;
     border: none;
@@ -107,8 +109,6 @@ button {
 }
 /*CV h1*/
 h1 {
-    font-family: "Roboto";
-    color: #FFFFFF;
     font-size: 60px;
     width: 100%;
     text-align: center;
@@ -198,12 +198,8 @@ span:nth-child(18) {
     filter: blur(0);
     }
 }
-/*Cards*/
-* {
-	box-sizing: border-box;
-}
+/*CV cards*/
 .container {
-    font-family: "Roboto";
     margin-top: 2%;
     width: 100%;
     display: flex;
@@ -227,7 +223,6 @@ span:nth-child(18) {
     border-radius: 1rem;
     padding: 1.5rem;
     z-index: 10;
-    color: whitesmoke;
     margin: 10px auto 20px auto;
     -webkit-box-shadow: 0px 0px 9px 5px #ffffff; 
     -moz-box-shadow: 0px 0px 9px 5px #ffffff; 
@@ -248,113 +243,24 @@ span:nth-child(18) {
     border: none;
     text-align: center;
     font-size: 1rem;
-    color: whitesmoke;
     background-color: #fa709a;
     padding: 0.8rem 1.8rem;
     border-radius: 2rem;
     cursor: pointer;
     margin-top: auto;
 }
-@media screen and (min-width: 250px) and (max-width: 299px) {
+/*Responsive CV cards*/
+@media screen and (max-width: 850px) {
     .container {
-        display: inline-block;
-        justify-content: space-between ;
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-        }
-    .card {
-        justify-items: center;
-        justify-content: space-between ;
-        position: relative;
-        max-width: 230px;
-        }
-        .frame {
-            width: 90%;
-            margin: 30px auto 10px auto;
-            text-align: center;
-            margin-left: 25px;
-        }
+        flex-wrap: wrap;
+        justify-content: center;
     }
-@media screen and (min-width: 300px) and (max-width: 349px) {
-    .container {
-        display: inline-block;
-        justify-content: space-between ;
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-        }
     .card {
-        justify-items: center;
-        justify-content: space-between ;
-        position: relative;
-        max-width: 250px;
-        }
-    }
-@media screen and (min-width: 350px) and (max-width: 429px) {
-    .container {
-        display: inline-block;
-        justify-content: space-between ;
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-        }
-    .card {
-        justify-items: center;
-        justify-content: space-between ;
-        position: relative;
-        max-width: 300px;
-        }
-    }
-@media screen and (min-width: 430px) and (max-width: 480px) {
-    .container {
-        display: inline-block;
-        justify-content: space-between ;
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-        }
-    .card {
-        justify-items: center;
-        justify-content: space-between ;
-        position: relative;
+        width: calc(100% - 20px);
         max-width: 350px;
-        }
-    }
-@media screen and (min-width: 481px) and (max-width: 600px) {
-.container {
-    display: inline-block;
-    justify-content: space-between ;
-    position: relative;
-    align-items: center;
-    justify-items: center;
-    padding: 10px 40px;
-    }
-.card {
-    justify-items: center;
-    justify-content: space-between ;
-    position: relative;
+        margin: 10px;
     }
 }
-@media screen and (min-width: 601px) and (max-width: 850px) {
-    .container {
-        display: inline-block;
-        justify-content: space-between ;
-        position: relative;
-        align-items: center;
-        justify-items: center;
-        padding: 10px 40px;
-        }
-    .card {
-        justify-items: center;
-        justify-content: space-between ;
-        position: relative;
-        }
-    }
 @-webkit-keyframes move {
   from {
     transform: translate(-100px, -50px) rotate(-90deg);
@@ -377,111 +283,55 @@ span:nth-child(18) {
 }
 /*Github and linkedin boxes*/
 .boxgitlink {
-    flex: 0 0 auto;
-    align-items: center;
-    position: relative;
-    justify-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 5%;
-    justify-content: space-around;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
     margin-bottom: 20px;
 }
+.box2,
+.box3 {
+    flex: 0 0 auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    position: relative;
+    transition: transform 0.5s ease;
+}
 .box2 {
-    flex: 0 0 auto;
-    align-items: center;
-    position: relative;
-    justify-items: center;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.2px);
-    -webkit-backdrop-filter: blur(9.2px);
     border: 1px solid rgba(0, 0, 0, 0.31);
-    transition: 0.5s ease;
-}
-.box-2 {
-    background-image: url(Assets/github.png) ;
-    perspective: 600px;
-    margin: auto;
-    perspective-origin: 25% 75%;
-    transition: all 0.6s ease-in-out;
-    &:hover {
-      transform: rotateY(180deg);
-    }
-}
-.box3 {
-    flex: 0 0 auto;
-    align-items: center;
-    position: relative;
-    justify-items: center;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(9.2px);
-    -webkit-backdrop-filter: blur(9.2px);
-    border: 1px solid rgba(68, 99, 240, 0.31);
-    transition: 0.5s ease;
-}
-.box-3 {
-    background: url(Assets/linkedin.png);
-    perspective: 600px;
-    margin: auto;
-    perspective-origin: 25% 75%;
-    transition: all 0.6s ease-in-out;
-    &:hover {
-      transform: rotateY(180deg);
-    }
-}
-.gitlink,
-.box2,
-.box3 {
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
-.box2,
-.box3 {
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
-    position: relative;
-    transition: 0.5s ease;
 }
 .box-2,
 .box-3 {
     perspective: 600px;
     perspective-origin: 25% 75%;
-    transition: all 0.6s ease-in-out;
-    margin: auto;
 }
-.box2:hover,
-.box3:hover,
+.box-2 {
+    background-image: url(Assets/github.png) ;    
+}
+.box-3 {
+    background: url(Assets/linkedin.png);
+}
 .box-2:hover,
 .box-3:hover {
     transform: rotateY(180deg);
 }
-.git {
-    font-family: "Roboto";
-    color: #fff;
-    font-size: 30px;
+.gitlink,
+.box2,
+.box3 {
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
 }
+.git,
 .linkedin {
-    font-family: "Roboto";
-    color: #fff;
     font-size: 30px;
 }
+/*Responsive Github & Linkedin img*/
 @media screen and (max-width: 600px) {
-.git {
-    font-size: 20px;
-    }
-.linkedin {
-    font-size: 20px;
+    .git,
+    .linkedin {
+        font-size: 20px;
     }
 }
