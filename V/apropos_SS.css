@@ -1,3 +1,8 @@
+* {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
 /*Body*/
 body {
     /*Background*/
@@ -10,19 +15,19 @@ body {
     margin: 0 ;
     justify-content: center;
     align-items: center;
-    }
+}
 /*Background responsive mobile*/
 @media only screen and (max-width : 767px) {
-    body {
-        background: url(Assets/background.jpg) ;
-        background-position: center center ;
-        background-repeat: no-repeat ;
-        background-attachment: scroll ;
-        background-size: cover ;
-        background-color: black ;
-        margin: 0 ;
-        }
+body {
+    background: url(Assets/background.jpg) ;
+    background-position: center center ;
+    background-repeat: no-repeat ;
+    background-attachment: scroll ;
+    background-size: cover ;
+    background-color: black ;
+    margin: 0 ;
     }
+}
 /*Header navigation bar*/
 .frame {
     width: 90%;
@@ -33,11 +38,9 @@ button {
     margin: 10px;
 }
 .custom-btn {
-    color: #fff;
     width: 130px;
     height: 40px;
     padding: 10px 25px;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
@@ -46,7 +49,6 @@ button {
     display: inline-block;
 }
 .btn-7 {
-    color: #fff;
     line-height: 40px;
     padding: 0;
     border: none;
@@ -105,32 +107,30 @@ button {
 .btn-7 span:hover:after {
     width: 100%;
 }
-/*A propos h1*/
+/* A propos h1 */
 h1 {
-    font-family: "Roboto";
-    color: #FFFFFF;
     font-size: 60px;
-    width: 100%;
-    text-align: center;
     width: fit-content;
     margin: 30px auto;
     transform: scale(0.94);
     animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+    text-align: center;
 }
-/*A propos h1 responsive*/
+/* A propos h1 responsive */
 @media screen and (max-width: 600px) {
     h1 {
-    font-size: 40px;
+        font-size: 40px;
     }
 }
 @media screen and (min-width: 601px) {
     h1 {
-    font-size: 60px;
+        font-size: 60px;
     }
 }
+/* Keyframes */
 @keyframes scale {
     100% {
-    transform: scale(1);
+        transform: scale(1);
     }
 }
 span {
@@ -198,33 +198,25 @@ span:nth-child(18) {
     filter: blur(0);
     }
 }
-/*Container*/
+/* Container */
 .container {
-    font-family: 'Roboto';
-    color: #fff;
-}
-.container {
-    max-width: 800px; 
-    margin: 0 auto; 
+    max-width: 800px;
+    margin: 0 auto;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-
 .title {
-    font-size: 24px; 
+    font-size: 24px;
     font-weight: bold;
-    margin-bottom: 15px; 
+    margin-bottom: 15px;
     text-align: center;
 }
-
 .text {
-    font-size: 16px; /* Adjust font size as per your preference */
-    line-height: 1.6; /* Adjust line height for better readability */
+    font-size: 16px;
+    line-height: 1.6;
 }
-
-/* Optional: Add some space on the sides of the container */
 @media (max-width: 850px) {
     .container {
-        padding: 20px 40px; /* Adjust padding as per your preference */
+        padding: 20px 40px;
     }
 }
