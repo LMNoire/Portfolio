@@ -283,54 +283,105 @@ span:nth-child(18) {
 }
 /*Github and linkedin boxes*/
 .boxgitlink {
-    display: flex;
-    justify-content: center;
+    flex: 0 0 auto;
     align-items: center;
-    margin-top: 5%;
+    position: relative;
+    justify-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+    justify-content: space-around;
+    display: flex;
     margin-bottom: 20px;
+    margin-top: 5%;
 }
+.box2 {
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(0, 0, 0, 0.31);
+    transition: 0.5s ease;
+}
+.box-2 {
+    background-image: url(Assets/github.png) ;
+    perspective: 600px;
+    margin: auto;
+    perspective-origin: 25% 75%;
+    transition: all 0.6s ease-in-out;
+    &:hover {
+      transform: rotateY(180deg);
+    }
+}
+.box3 {
+    flex: 0 0 auto;
+    align-items: center;
+    position: relative;
+    justify-items: center;
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(9.2px);
+    -webkit-backdrop-filter: blur(9.2px);
+    border: 1px solid rgba(68, 99, 240, 0.31);
+    transition: 0.5s ease;
+}
+.box-3 {
+    background: url(Assets/linkedin.png);
+    perspective: 600px;
+    margin: auto;
+    perspective-origin: 25% 75%;
+    transition: all 0.6s ease-in-out;
+    &:hover {
+      transform: rotateY(180deg);
+    }
+}
+.gitlink,
 .box2,
 .box3 {
     flex: 0 0 auto;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.box2,
+.box3 {
     width: 100px;
     height: 100px;
     border-radius: 16px;
     position: relative;
-    transition: transform 0.5s ease;
-}
-.box2 {
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(0, 0, 0, 0.31);
+    transition: 0.5s ease;
 }
 .box-2,
 .box-3 {
     perspective: 600px;
     perspective-origin: 25% 75%;
+    transition: all 0.6s ease-in-out;
+    margin: auto;
 }
-.box-2 {
-    background-image: url(Assets/github.png) ;    
-}
-.box-3 {
-    background: url(Assets/linkedin.png);
-}
+/*Github & Linkedin img rotate when hover*/
+.box2:hover,
+.box3:hover,
 .box-2:hover,
 .box-3:hover {
     transform: rotateY(180deg);
 }
-.gitlink,
-.box2,
-.box3 {
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-}
+/*Github & Linkedin text*/
 .git,
 .linkedin {
     font-size: 30px;
 }
-/*Responsive Github & Linkedin img*/
+/*Responsive Github & Linkedin text*/
 @media screen and (max-width: 600px) {
-    .git,
+    .git, 
     .linkedin {
         font-size: 20px;
     }
