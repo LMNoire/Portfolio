@@ -185,9 +185,12 @@ span:nth-child(18) {
     filter: blur(0);
     }
 }
+/*Formation*/
+.formation {
+    text-align: center;
+}
 /*Cards*/
 .container {
-    margin-top: 4%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
