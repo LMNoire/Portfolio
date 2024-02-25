@@ -185,10 +185,12 @@ span:nth-child(18) {
     filter: blur(0);
     }
 }
+
 /*Formation*/
 .formation {
     text-align: center;
 }
+
 /*Cards*/
 .container {
     width: 100%;
@@ -254,4 +256,21 @@ span:nth-child(18) {
     justify-content: space-between;
     position: relative;
     width: calc(90% - 10px);
+}
+/*Carousels*/
+.hero {
+    overflow: hidden;
+}
+
+.hero .carousel {
+    width: 150px;
+    margin: 0 auto 100px;
+    overflow: visible;
+}
+
+.carousel img {
+    -webkit-box-reflect: below 20px linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.3));
+}
+.carousel li {
+    text-align: center;
 }
