@@ -4,7 +4,7 @@ Création d'un portfolio professionnel suite à une formation de développeur fu
 HTML/CSS/PHP/Javascript
 # Front
 - Une page index qui renvoi vers le portfolio, les compétences, le CV, à propos puis contact.
-- Ajout d'éléments défilants sur la page portfolio (carousels).
+- Ajout d'éléments défilants sur la page portfolio (carrousels composants javascript et python).
 - Une nav bar occupe le header.
 - Les différentes vues sont responsive.
 - Version FR et EN.
