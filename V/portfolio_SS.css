@@ -251,6 +251,7 @@ span:nth-child(18) {
     align-items: center;
     justify-items: center;
     padding: 10px 40px;
+    margin-bottom: 20px;
 }
 .card {
     justify-items: center;
@@ -262,6 +263,7 @@ span:nth-child(18) {
 /*Carousels*/
 .hero {
     overflow: hidden;
+        
 }
 .hero .carousel {
     width: 150px;
