@@ -189,6 +189,7 @@ span:nth-child(18) {
 /*Formation*/
 .formation {
     text-align: center;
+    padding: 20px;
 }
 
 /*Cards*/
@@ -263,7 +264,6 @@ span:nth-child(18) {
 /*Carousels*/
 .hero {
     overflow: hidden;
-        
 }
 .hero .carousel {
     width: 150px;
@@ -272,4 +272,16 @@ span:nth-child(18) {
 }
 .carousel li {
     text-align: center;
+}
+.cleanthiscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+.cleanthis {
+    padding-bottom: 20px;
+    width: calc(70%);
+    margin: 0 auto;
+
 }
