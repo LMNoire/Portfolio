@@ -311,6 +311,8 @@ span:nth-child(18) {
 }
 .box-2 {
     background-image: url(Assets/github.png) ;
+    background-size: contain;
+    background-repeat: no-repeat;
     perspective: 600px;
     margin: auto;
     perspective-origin: 25% 75%;
@@ -336,6 +338,8 @@ span:nth-child(18) {
 }
 .box-3 {
     background: url(Assets/linkedin.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     perspective: 600px;
     margin: auto;
     perspective-origin: 25% 75%;
