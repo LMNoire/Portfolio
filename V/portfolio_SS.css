@@ -265,10 +265,18 @@ span:nth-child(18) {
 /*Carousels*/
 .hero {
     overflow: hidden;
+    border: solid 1px white;
+    border-radius: 5px;
+    width: 650px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.hero:last-child {
+    margin-bottom: 0;
 }
 .hero .carousel {
     width: 150px;
-    margin: 0 auto 100px;
+    margin: 0 auto 30px;
     overflow: visible;
 }
 .carousel li {
