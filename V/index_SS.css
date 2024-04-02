@@ -301,7 +301,7 @@ span:nth-child(18) {
         position: relative;
         align-items: center;
         justify-items: center;
-        padding: 10px 40px;
+        padding: 20px 0px;
     }
     .card {
         justify-items: center;
