@@ -1,128 +1,197 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
+  <head>
     <title>Contact</title>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--CSS link-->
-    <link rel="stylesheet" href="contact_SS.css">
+    <link rel="stylesheet" href="contact_SS.css" />
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <script>
-        function sendForm() {
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
+      function sendForm() {
+        const email = document.getElementById("email").value;
+        const subject = document.getElementById("subject").value;
+        const message = document.getElementById("message").value;
 
-            const xhr = new XMLHttpRequest();
+        const xhr = new XMLHttpRequest();
 
-            xhr.open('POST', '../C/mailform.action.php', true);
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.open("POST", "../C/mailform.action.php", true);
+        xhr.setRequestHeader(
+          "Content-Type",
+          "application/x-www-form-urlencoded"
+        );
 
-            xhr.onload = function () {
-                if (this.status === 200) {
-                    // Display the result message in a modal popup
-                    showModal(this.responseText);
-                } else {
-                    showModal('Une erreur est survenue.');
-                }
-            };
+        xhr.onload = function () {
+          if (this.status === 200) {
+            // Display the result message in a modal popup
+            showModal(this.responseText);
+          } else {
+            showModal("Une erreur est survenue.");
+          }
+        };
 
-            xhr.send(`email=${email}&subject=${subject}&message=${message}`);
-            return false;
-        }
+        xhr.send(`email=${email}&subject=${subject}&message=${message}`);
+        return false;
+      }
 
-        function showModal(message) {
-            // Create a modal dialog
-            const modal = document.createElement('div');
-            modal.className = 'modal';
-            modal.innerHTML = `
+      function showModal(message) {
+        // Create a modal dialog
+        const modal = document.createElement("div");
+        modal.className = "modal";
+        modal.innerHTML = `
                 <div class="modal-content">
                     <span class="close-button" onclick="closeModal()">&times;</span>
                     <p>${message}</p>
                 </div>
             `;
 
-            // Append modal to the body
-            document.body.appendChild(modal);
-        }
+        // Append modal to the body
+        document.body.appendChild(modal);
+      }
 
-        function closeModal() {
-            // Remove the modal from the DOM
-            const modal = document.querySelector('.modal');
-            if (modal) {
-                modal.remove();
-            }
+      function closeModal() {
+        // Remove the modal from the DOM
+        const modal = document.querySelector(".modal");
+        if (modal) {
+          modal.remove();
         }
+      }
     </script>
-</head>
+  </head>
 
-<body>
-<!--Navigation bar-->
-<div class="frame">
-    <a href="index.html"><button class="custom-btn btn-7"><span>ACCUEIL</span></button></a>
-    <a href="portfolio.html"><button class="custom-btn btn-7"><span>PORTFOLIO</span></button></a>
-    <a href="competences.html"><button class="custom-btn btn-7"><span>COMPETENCES</span></button></a>
-    <a href="cv.html"><button class="custom-btn btn-7"><span>CV</span></button></a>
-    <a href="apropos.html"><button class="custom-btn btn-7"><span>A PROPOS</span></button></a>
-    <a href="contact.html"><button class="custom-btn btn-7"><span>CONTACT</span></button></a>
-    <a href="EN/en_index.html"><button class="custom-btn btn-7"><span>ENGLISH</span></button></a>
-</div>
+  <body>
+    <!--Navigation bar-->
+    <div class="frame">
+      <a href="index.html"
+        ><button class="custom-btn btn-7">
+          <span>ACCUEIL</span
+          ><img src="Assets/Navbar/Home grey.svg" class="normal" /><img
+            src="Assets/Navbar/Home pink.svg"
+            class="hover"
+          /></button
+      ></a>
+      <a href="portfolio.html"
+        ><button class="custom-btn btn-7">
+          <span>PORTFOLIO</span
+          ><img src="Assets/Navbar/Realisations grey.svg" class="normal" /><img
+            src="Assets/Navbar/Realisations pink.svg"
+            class="hover"
+          /></button
+      ></a>
+      <a href="competences.html"
+        ><button class="custom-btn btn-7">
+          <span>COMPETENCES</span>
+          <img src="Assets/Navbar/Competences grey.svg" class="normal" /><img
+            src="Assets/Navbar/Competences pink.svg"
+            class="hover"
+          /></button
+      ></a>
+      <a href="cv.html"
+        ><button class="custom-btn btn-7">
+          <span>CV</span>
+          <img src="Assets/Navbar/Experience grey.svg" class="normal" /><img
+            src="Assets/Navbar/Experience pink.svg"
+            class="hover"
+          /></button
+      ></a>
+      <a href="apropos.html"
+        ><button class="custom-btn btn-7">
+          <span>A PROPOS</span>
+          <img src="Assets/Navbar/About grey.svg" class="normal" /><img
+            src="Assets/Navbar/About pink.svg"
+            class="hover"
+          /></button
+      ></a>
+      <a href="contact.html"
+        ><button class="custom-btn btn-7">
+          <span>CONTACT</span>
+          <img src="Assets/Navbar/Contact grey.svg" class="normal" /><img
+            src="Assets/Navbar/Contact pink.svg"
+            class="hover"
+          /></button
+      ></a>
+      <a href="EN/en_index.html"
+        ><button class="custom-btn btn-7"><span>ENGLISH</span></button></a
+      >
+    </div>
 
-
-<!--Card-->
-<div class="card">
-    <form onsubmit="return sendForm();">
+    <!--Card-->
+    <div class="card">
+      <form onsubmit="return sendForm();">
         <div class="registerForm">
-        <h1>M'envoyer un message</h1>
-        <p>Merci de bien vouloir remplir les champs suivants</p>
-        <!--Mail and subject inputs-->
-        <input type="text" placeholder="Votre email" name="email" id="email" required>
-        <input type="text" placeholder="Sujet" name="subject" id="subject" required>
-        <hr> <!--Break line-->
-        <!--Text area for message-->
-        <textarea id="message" name="message" placeholder="Votre message" required></textarea>
-        <hr> <!--Break line-->
-        <!--Registration form submit button-->
-        <button type="submit" class="sendMail">Envoyer</button>
-    </div>  
-    </form>
-</div>
+          <h1>M'envoyer un message</h1>
+          <p>Merci de bien vouloir remplir les champs suivants</p>
+          <!--Mail and subject inputs-->
+          <input
+            type="text"
+            placeholder="Votre email"
+            name="email"
+            id="email"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Sujet"
+            name="subject"
+            id="subject"
+            required
+          />
+          <hr />
+          <!--Break line-->
+          <!--Text area for message-->
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Votre message"
+            required
+          ></textarea>
+          <hr />
+          <!--Break line-->
+          <!--Registration form submit button-->
+          <button type="submit" class="sendMail">Envoyer</button>
+        </div>
+      </form>
+    </div>
 
-<!--Github and linkedin-->
-<div class="boxgitlink">
-    <p class="git">GITHUB</p>
-    <a href="https://github.com/LMNoire"><div class="box2 box-2"></div></a>
-    <a href="https://linkedin.com/in/selim-coulombel-9745442a4"><div class="box3 box-3"></div></a>
-    <p class="linkedin">LINKEDIN</p>
-</div>
+    <!--Github and linkedin-->
+    <div class="boxgitlink">
+      <p class="git">GITHUB</p>
+      <a href="https://github.com/LMNoire"><div class="box2 box-2"></div></a>
+      <a href="https://linkedin.com/in/selim-coulombel-9745442a4"
+        ><div class="box3 box-3"></div
+      ></a>
+      <p class="linkedin">LINKEDIN</p>
+    </div>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
-    
-    form.addEventListener('submit', function(event) {
-        const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
-        const message = document.getElementById('message').value;
-        
-        // Simple email validation (you can use a more robust regex pattern)
-        if (!email.includes('@')) {
-            alert('Veuillez entrer une adresse e-mail valide.');
-            event.preventDefault(); // Prevent form submission
-        }
-        
-        // Check if subject and message are not empty
-        if (!subject.trim() || !message.trim()) {
-            alert('Veuillez remplir tous les champs.');
-            event.preventDefault(); // Prevent form submission
-        }
-    });
-});
-</script>
-<!--End of body-->
-</body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const form = document.querySelector("form");
+
+        form.addEventListener("submit", function (event) {
+          const email = document.getElementById("email").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          if (!email.includes("@")) {
+            alert("Veuillez entrer une adresse e-mail valide.");
+            event.preventDefault();
+          }
+
+          if (!subject.trim() || !message.trim()) {
+            alert("Veuillez remplir tous les champs.");
+            event.preventDefault();
+          }
+        });
+      });
+    </script>
+
+    <!--End of body-->
+  </body>
 </html>

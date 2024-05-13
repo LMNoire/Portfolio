@@ -1,339 +1,364 @@
 * {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 /*Body*/
 body {
-    /*Background*/
-    background: url(Assets/background.jpg) ;
-    background-position: center center ;
-    background-repeat: no-repeat ;
-    background-attachment: fixed ;
-    background-size: cover ;
-    background-color: black ;
-    margin: 0 ;
-    justify-content: center;
-    align-items: center;
+  /*Background*/
+  background: url(Assets/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 /*Background responsive mobile*/
-@media only screen and (max-width : 767px) {
-body {
-    background: url(Assets/background.jpg) ;
-    background-position: center center ;
-    background-repeat: no-repeat ;
-    background-attachment: fixed ;
-    background-size: cover ;
-    background-color: black ;
-    margin: 0 ;
-    }
+@media only screen and (max-width: 767px) {
+  body {
+    background: url(Assets/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+  }
 }
 /*Header navigation bar*/
 .frame {
-    width: 90%;
-    margin: 30px auto 10px auto;
-    text-align: center;
+  width: 90%;
+  margin: 30px auto 10px auto;
+  text-align: center;
 }
 button {
-    margin: 10px;
+  margin: 10px;
+}
+.custom-btn .normal {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: auto;
+}
+.custom-btn .hover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: auto;
+}
+
+.custom-btn:hover .normal {
+  display: none;
+}
+
+.custom-btn:hover .hover {
+  display: inline;
 }
 .custom-btn {
-    width: 130px;
-    height: 40px;
-    padding: 10px 25px;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
+  width: 160px;
+  height: 40px;
+  padding: 10px 25px 10px 35px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 .btn-7 {
-    line-height: 40px;
-    padding: 0;
-    border: none;
+  line-height: 40px;
+  padding: 0;
+  border: none;
 }
 .btn-7 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .btn-7:before,
 .btn-7:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    box-shadow: 0 0 5px #fff;
-    transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0 0 5px #fff;
+  transition: all 0.3s ease;
 }
-.btn-7:before{
-    height: 50%;
-    width: 2px;
+.btn-7:before {
+  height: 50%;
+  width: 2px;
 }
 .btn-7:after {
-    width: 20%;
-    height: 2px;
+  width: 20%;
+  height: 2px;
 }
 .btn-7:hover:before {
-    height: 100%;
+  height: 100%;
 }
 .btn-7:hover:after {
-    width: 100%;
+  width: 100%;
 }
 .btn-7 span:before,
 .btn-7 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: #fff;
-    box-shadow: 0 0 5px #fff;
-    transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0 5px #fff;
+  transition: all 0.3s ease;
 }
 .btn-7 span:before {
-    width: 2px;
-    height: 50%;
+  width: 2px;
+  height: 50%;
 }
 .btn-7 span:after {
-    height: 2px;
-    width: 20%;
+  height: 2px;
+  width: 20%;
 }
 .btn-7 span:hover:before {
-    height: 100%;
+  height: 100%;
 }
 .btn-7 span:hover:after {
-    width: 100%;
+  width: 100%;
 }
 /*Container*/
 .container {
-    margin-top: 2%;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    position: relative;
-    overflow: hidden;
+  margin-top: 2%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
 }
 /*Formation*/
 .formation {
-    text-align: center;
+  text-align: center;
 }
 /*Skills cards*/
 .card {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: flex-end;
-    width: calc(33.33% - 40px);
-    min-height: 150px;
-    height: 200px;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 1rem;
-    padding: 1.5rem;
-    z-index: 10;
-    margin: 10px 10px 30px 10px;
-    -webkit-box-shadow: 0px 0px 9px 5px #ffffff;
-    -moz-box-shadow: 0px 0px 9px 5px #ffffff;
-    box-shadow: 0px 0px 9px 5px #ffffff;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(33.33% - 40px);
+  min-height: 150px;
+  height: 200px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  z-index: 10;
+  margin: 10px 10px 30px 10px;
+  -webkit-box-shadow: 0px 0px 9px 5px #ffffff;
+  -moz-box-shadow: 0px 0px 9px 5px #ffffff;
+  box-shadow: 0px 0px 9px 5px #ffffff;
 }
 .title {
-    font-size: 1.1rem;
-    margin-bottom: 1rem;
-    align-self: center;
-    text-decoration: underline;
-    order: 2;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  align-self: center;
+  text-decoration: underline;
+  order: 2;
 }
 .content {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 20px;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  text-align: center;
 }
 .column {
-    flex: 1;
+  flex: 1;
 }
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 .content2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    max-width: 100%;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 100%;
+  text-align: center;
 }
 /*Media Queries*/
 @media screen and (max-width: 249px) {
-    .container {
-        padding: 10px 40px;
-    }
+  .container {
+    padding: 10px 40px;
+  }
 }
 @media screen and (min-width: 250px) and (max-width: 379px) {
-    .card {
-        max-width: 230px;
-        width: 100%;
-        height: 380px;
-    }
+  .card {
+    max-width: 230px;
+    width: 100%;
+    height: 380px;
+  }
 }
 @media screen and (min-width: 380px) and (max-width: 399px) {
-    .container,
-    .card {
-        flex-direction: column;
-        padding: 10px 40px;
-    }
-    .card {
-        width: calc(90% - 5px);
-        height: 250px;
-        overflow: hidden;
-    }
+  .container,
+  .card {
+    flex-direction: column;
+    padding: 10px 40px;
+  }
+  .card {
+    width: calc(90% - 5px);
+    height: 250px;
+    overflow: hidden;
+  }
 }
 @media screen and (min-width: 400px) and (max-width: 479px) {
-    .card {
-        width: 400px;
-        height: 250px;
-    }
+  .card {
+    width: 400px;
+    height: 250px;
+  }
 }
 @media screen and (min-width: 480px) and (max-width: 600px) {
-    .card {
-        width: 400px;
-        height: 250px;
-    }
+  .card {
+    width: 400px;
+    height: 250px;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 899px) {
-    .card {
-        width: calc(70% - 20px);
-        height: 250px;
-    }
+  .card {
+    width: calc(70% - 20px);
+    height: 250px;
+  }
 }
 @media screen and (min-width: 900px) and (max-width: 1199px) {
-    .container {
-        flex-wrap: wrap;
-    }
-    .card {
-        width: calc(50% - 20px);
-        height: 230px;
-    }
+  .container {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: calc(50% - 20px);
+    height: 230px;
+  }
 }
 /*Keyframes*/
 @-webkit-keyframes move {
-    from {
-        transform: translate(-100px, -50px) rotate(-90deg);
-        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
-    to {
-        transform: translate(500px, 100px) rotate(-10deg);
-        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
 }
 @keyframes move {
-    from {
-        transform: translate(-100px, -50px) rotate(-90deg);
-        border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
-    }
-    to {
-        transform: translate(500px, 100px) rotate(-10deg);
-        border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
-    }
+  from {
+    transform: translate(-100px, -50px) rotate(-90deg);
+    border-radius: 24% 76% 35% 65% / 27% 36% 64% 73%;
+  }
+  to {
+    transform: translate(500px, 100px) rotate(-10deg);
+    border-radius: 76% 24% 33% 67% / 68% 55% 45% 32%;
+  }
 }
 /* Stack technique h1 */
 h1 {
-    font-size: 60px;
-    width: fit-content;
-    margin: 30px auto;
-    transform: scale(0.94);
-    animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-    text-align: center;
+  font-size: 60px;
+  width: fit-content;
+  margin: 30px auto;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  text-align: center;
 }
 /* Stack technique h1 responsive */
 @media screen and (max-width: 600px) {
-    h1 {
-        font-size: 40px;
-    }
+  h1 {
+    font-size: 40px;
+  }
 }
 /* Keyframes */
 @keyframes scale {
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 /*Fade-in animation for span elements*/
 span {
-    display: inline-block;
-    opacity: 0;
-    filter: blur(4px);
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
 }
 span:nth-child(1) {
-    animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(2) {
-    animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(3) {
-    animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(4) {
-    animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(5) {
-    animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(6) {
-    animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(7) {
-    animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(8) {
-    animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(9) {
-    animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(10) {
-    animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(11) {
-    animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(12) {
-    animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(13) {
-    animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(14) {
-    animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(15) {
-    animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(16) {
-    animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(17) {
-    animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 span:nth-child(18) {
-    animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
 }
 @keyframes fade-in {
-    100% {
-        opacity: 1;
-        filter: blur(0);
-    }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
 }

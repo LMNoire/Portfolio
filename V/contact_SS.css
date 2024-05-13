@@ -1,407 +1,433 @@
 * {
-    color: #fff;
-    font-family: 'Roboto', sans-serif;
-    box-sizing: border-box;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 /*Body*/
 body {
-    /*Background*/
-    background: url(Assets/background.jpg) ;
-    background-position: center center ;
-    background-repeat: no-repeat ;
-    background-attachment: fixed ;
-    background-size: cover ;
-    background-color: black ;
-    margin: 0 ;
-    justify-content: center;
-    align-items: center;
+  /*Background*/
+  background: url(Assets/background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 /*Background responsive mobile*/
-@media only screen and (max-width : 767px) {
-    body {
-        background: url(Assets/background.jpg) ;
-        background-position: center center ;
-        background-repeat: no-repeat ;
-        background-attachment: fixed ;
-        background-size: cover ;
-        background-color: black ;
-        margin: 0 ;
-    }
+@media only screen and (max-width: 767px) {
+  body {
+    background: url(Assets/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    margin: 0;
+  }
 }
 /*Header navigation bar*/
 .frame {
-    width: 90%;
-    margin: 30px auto 10px auto;
-    text-align: center;
+  width: 90%;
+  margin: 30px auto 10px auto;
+  text-align: center;
 }
 button {
-    margin: 10px;
+  margin: 10px;
+}
+.custom-btn .normal {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: auto;
+}
+.custom-btn .hover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: auto;
+}
+
+.custom-btn:hover .normal {
+  display: none;
+}
+
+.custom-btn:hover .hover {
+  display: inline;
 }
 .custom-btn {
-    width: 130px;
-    height: 40px;
-    padding: 10px 25px;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
+  width: 160px;
+  height: 40px;
+  padding: 10px 25px 10px 35px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
 }
 .btn-7 {
-    line-height: 40px;
-    padding: 0;
-    border: none;
+  line-height: 40px;
+  padding: 0;
+  border: none;
 }
 .btn-7 span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 .btn-7:before,
 .btn-7:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    box-shadow: 0 0 5px #fff;
-    transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0 0 5px #fff;
+  transition: all 0.3s ease;
 }
-.btn-7:before{
-    height: 50%;
-    width: 2px;
+.btn-7:before {
+  height: 50%;
+  width: 2px;
 }
 .btn-7:after {
-    width: 20%;
-    height: 2px;
+  width: 20%;
+  height: 2px;
 }
 .btn-7:hover:before {
-    height: 100%;
+  height: 100%;
 }
 .btn-7:hover:after {
-    width: 100%;
+  width: 100%;
 }
 .btn-7 span:before,
 .btn-7 span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: #fff;
-    box-shadow: 0 0 5px #fff;
-    transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0 5px #fff;
+  transition: all 0.3s ease;
 }
 .btn-7 span:before {
-    width: 2px;
-    height: 50%;
+  width: 2px;
+  height: 50%;
 }
 .btn-7 span:after {
-    height: 2px;
-    width: 20%;
+  height: 2px;
+  width: 20%;
 }
 .btn-7 span:hover:before {
-    height: 100%;
+  height: 100%;
 }
 .btn-7 span:hover:after {
-    width: 100%;
+  width: 100%;
 }
 /*Message Card*/
 .container {
-    margin-top: 4%;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+  margin-top: 4%;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    width: 1000px;
-    min-height: 150px;
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 1rem;
-    padding: 1rem;
-    z-index: 10;
-    margin: 40px auto;
-    -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
-    -moz-box-shadow: 0px 0px 15px 5px #ffffff;
-    box-shadow: 0px 0px 15px 5px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  width: 1000px;
+  min-height: 150px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 10;
+  margin: 40px auto;
+  -webkit-box-shadow: 0px 0px 15px 5px #ffffff;
+  -moz-box-shadow: 0px 0px 15px 5px #ffffff;
+  box-shadow: 0px 0px 15px 5px #ffffff;
 }
 /*Responsive card and message textarea*/
 @media screen and (max-width: 600px) {
-    .card {
-        width: 90%;
-        max-width: 400px;
-        margin: 40px auto;
-    }
-    #message {
-        width: 90%;
-        max-width: 350px;
-        height: 125px;
-        min-height: 125px;
-        max-height: 150px;
-        padding: 0.5rem;
-        border-radius: 8px;
-    }
+  .card {
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+  }
+  #message {
+    width: 90%;
+    max-width: 350px;
+    height: 125px;
+    min-height: 125px;
+    max-height: 150px;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
 }
 @media screen and (min-width: 250px) and (max-width: 600px) {
-    .card {
-        margin: 40px auto; 
-        width: 90%;
-        max-width: 400px;
-        text-align: center;
-    }
-    #message {
-        width: 90%;
-        max-width: 280px;
-        height: 125px;
-        min-height: 125px;
-        max-height: 150px;
-        padding: 0.5rem;
-        border-radius: 8px;
-    }
+  .card {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  #message {
+    width: 90%;
+    max-width: 280px;
+    height: 125px;
+    min-height: 125px;
+    max-height: 150px;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
 }
 @media screen and (min-width: 601px) and (max-width: 1024px) {
-    .card {
-        width: 600px;
-    }
-    #message {
-        width: 90%;
-        max-width: 500px;
-        height: 125px;
-        min-height: 125px;
-        max-height: 150px;
-        padding: 0.5rem;
-        border-radius: 8px;
-    }
+  .card {
+    width: 600px;
+  }
+  #message {
+    width: 90%;
+    max-width: 500px;
+    height: 125px;
+    min-height: 125px;
+    max-height: 150px;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
 }
 /*Message textarea*/
 #message {
-    width: 900px;
-    height: 120px;
-    min-height: 120px;
-    max-height: 100%;
-    padding: 1rem;
-    box-sizing: border-box;
-    resize: vertical;
-    border: solid gray;
-    border-radius: 10px;
-    background-color: transparent;
+  width: 900px;
+  height: 120px;
+  min-height: 120px;
+  max-height: 100%;
+  padding: 1rem;
+  box-sizing: border-box;
+  resize: vertical;
+  border: solid gray;
+  border-radius: 10px;
+  background-color: transparent;
 }
 #message::placeholder {
-    color: #aaa;
+  color: #aaa;
 }
 .registerForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 .sendMail {
-    width: 130px;
-    height: 40px;
-    padding: 10px 25px;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    line-height: 40px;
-    border: none;
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  line-height: 40px;
+  border: none;
 }
 
 .sendMail span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .sendMail:before,
 .sendMail:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    bottom: 0;
-    background: #fff;
-    box-shadow: 0 0 5px #fff;
-    transition: all 0.3s ease;
+  position: absolute;
+  content: "";
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0 0 5px #fff;
+  transition: all 0.3s ease;
 }
 
 .sendMail:before {
-    height: 50%;
-    width: 2px;
+  height: 50%;
+  width: 2px;
 }
 
 .sendMail:after {
-    width: 20%;
-    height: 2px;
+  width: 20%;
+  height: 2px;
 }
 
 .sendMail:hover:before {
-    height: 100%;
+  height: 100%;
 }
 
 .sendMail:hover:after {
-    width: 100%;
+  width: 100%;
 }
 
 .sendMail span:before,
 .sendMail span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    top: 0;
-    background: #fff;
-    box-shadow: 0 0 5px #fff;
-    transition: all }
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  background: #fff;
+  box-shadow: 0 0 5px #fff;
+  transition: all;
+}
 /*Github and linkedin boxes*/
 .boxgitlink {
-    flex: 0 0 auto;
-    align-items: center;
-    position: relative;
-    justify-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    justify-content: space-around;
-    display: flex;
-    margin-bottom: 20px;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
+  justify-items: center;
+  margin-left: 15%;
+  margin-right: 15%;
+  justify-content: space-around;
+  display: flex;
+  margin-bottom: 20px;
 }
 .box2 {
-    flex: 0 0 auto;
-    align-items: center;
-    position: relative;
-    justify-items: center;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(9.2px);
-    -webkit-backdrop-filter: blur(9.2px);
-    border: 1px solid rgba(0, 0, 0, 0.31);
-    transition: 0.5s ease;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
+  justify-items: center;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(0, 0, 0, 0.31);
+  transition: 0.5s ease;
 }
 .box-2 {
-    background-image: url(Assets/github.png) ;
-    background-size: contain;
-    background-repeat: no-repeat;
-    perspective: 600px;
-    margin: auto;
-    perspective-origin: 25% 75%;
-    transition: all 0.6s ease-in-out;
-    &:hover {
-      transform: rotateY(180deg);
-    }
+  background-image: url(Assets/github.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  perspective: 600px;
+  margin: auto;
+  perspective-origin: 25% 75%;
+  transition: all 0.6s ease-in-out;
+  &:hover {
+    transform: rotateY(180deg);
+  }
 }
 .box3 {
-    flex: 0 0 auto;
-    align-items: center;
-    position: relative;
-    justify-items: center;
-    margin: auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45);
-    backdrop-filter: blur(9.2px);
-    -webkit-backdrop-filter: blur(9.2px);
-    border: 1px solid rgba(68, 99, 240, 0.31);
-    transition: 0.5s ease;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
+  justify-items: center;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(9.2px);
+  -webkit-backdrop-filter: blur(9.2px);
+  border: 1px solid rgba(68, 99, 240, 0.31);
+  transition: 0.5s ease;
 }
 .box-3 {
-    background: url(Assets/linkedin.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    perspective: 600px;
-    margin: auto;
-    perspective-origin: 25% 75%;
-    transition: all 0.6s ease-in-out;
-    &:hover {
-      transform: rotateY(180deg);
-    }
+  background: url(Assets/linkedin.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  perspective: 600px;
+  margin: auto;
+  perspective-origin: 25% 75%;
+  transition: all 0.6s ease-in-out;
+  &:hover {
+    transform: rotateY(180deg);
+  }
 }
 .gitlink,
 .box2,
 .box3 {
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
 }
 .box2,
 .box3 {
-    width: 100px;
-    height: 100px;
-    border-radius: 16px;
-    position: relative;
-    transition: 0.5s ease;
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.5s ease;
 }
 .box-2,
 .box-3 {
-    perspective: 600px;
-    perspective-origin: 25% 75%;
-    transition: all 0.6s ease-in-out;
-    margin: auto;
+  perspective: 600px;
+  perspective-origin: 25% 75%;
+  transition: all 0.6s ease-in-out;
+  margin: auto;
 }
 /*Github & Linkedin img rotate when hover*/
 .box2:hover,
 .box3:hover,
 .box-2:hover,
 .box-3:hover {
-    transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 /*Github & Linkedin text*/
 .git,
 .linkedin {
-    font-size: 30px;
+  font-size: 30px;
 }
 /*Responsive Github & Linkedin text*/
 @media screen and (max-width: 600px) {
-    .git, 
-    .linkedin {
-        font-size: 20px;
-    }
+  .git,
+  .linkedin {
+    font-size: 20px;
+  }
 }
 /*Modal styles*/
 .modal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
 }
 .modal-content {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    width: 60%;
-    max-width: 400px;
-    position: relative;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%;
+  max-width: 400px;
+  position: relative;
 }
 .close-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
 }
