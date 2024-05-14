@@ -78,7 +78,7 @@ button {
   padding: 0;
   border: none;
 }
-.btn-7 span {
+.btn-7 div {
   position: relative;
   display: block;
   width: 100%;
@@ -108,8 +108,8 @@ button {
 .btn-7:hover:after {
   width: 100%;
 }
-.btn-7 span:before,
-.btn-7 span:after {
+.btn-7 div:before,
+.btn-7 div:after {
   position: absolute;
   content: "";
   left: 0;
@@ -118,18 +118,18 @@ button {
   box-shadow: 0 0 5px #fff;
   transition: all 0.3s ease;
 }
-.btn-7 span:before {
+.btn-7 div:before {
   width: 2px;
   height: 50%;
 }
-.btn-7 span:after {
+.btn-7 div:after {
   height: 2px;
   width: 20%;
 }
-.btn-7 span:hover:before {
+.btn-7 div:hover:before {
   height: 100%;
 }
-.btn-7 span:hover:after {
+.btn-7 div:hover:after {
   width: 100%;
 }
 /* A propos h1 */
