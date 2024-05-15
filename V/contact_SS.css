@@ -253,7 +253,32 @@ button {
   justify-content: center; 
   text-align: center;
 }
+.sendMail .normal {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: auto;
+}
 
+.sendMail .hover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: auto;
+}
+
+.sendMail:hover .normal {
+  display: none;
+}
+
+.sendMail:hover .hover {
+  display: inline;
+}
 .sendMail span {
   position: relative;
   display: block;
