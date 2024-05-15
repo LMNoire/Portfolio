@@ -235,6 +235,7 @@ button {
   height: 100%;
   padding: 0;
   margin: 0;
+  text-align: center;
 }
 .sendMail {
   width: 130px;
