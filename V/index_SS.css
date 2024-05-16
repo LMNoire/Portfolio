@@ -279,13 +279,14 @@ span:nth-child(18) {
   align-items: center;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
-  width: 400px;
+  justify-content: center;
+  width: 250px;
   min-height: 150px;
   background: rgba(255, 255, 255, 0.15);
   box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #ffffff;
@@ -297,11 +298,17 @@ span:nth-child(18) {
   z-index: 10;
   color: whitesmoke;
   margin: 10px auto 20px auto;
+  text-align: center;
+}
+.card:hover {
+  box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #C0FDFB;
+}
+.card:hover button {
+  box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #fff;
 }
 .title {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  align-self: baseline;
 }
 .subtitle {
   font-size: 1rem;
@@ -317,6 +324,45 @@ span:nth-child(18) {
   border-radius: 2rem;
   cursor: pointer;
   margin-top: auto;
+}
+/*Cards content list*/
+.card ul {
+  /*Remove decoration*/
+  list-style-type: none;
+  /*Center list elements*/
+  text-align: center;
+  /*Remove margin on left for better space*/
+  margin-left: -25px;
+}
+.card ul li {
+  /*Marge between list elements for space*/
+  margin-bottom: 5px;
+}
+/*Line between cards*/
+.container::before {
+  /*Empty content for line*/
+  content: '';
+  /*Absolute position*/
+  position: absolute;
+  /*Line is at the middle of cards*/
+  top: 50%; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  /*Line width*/
+  width: calc(100% - 600px); 
+  /*Line height*/
+  height: 3px;
+  /*Line color*/
+  background-color: white; 
+  box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #ffffff;
+  /*Put line in the back of others elements*/
+  z-index: 5;
+}
+.card:first-child {
+  margin-left: auto; 
+}
+.card:last-child {
+  margin-right: auto; 
 }
 /*Responsive cards*/
 @media screen and (min-width: 250px) and (max-width: 1299px) {
@@ -368,6 +414,7 @@ span:nth-child(18) {
 /*Github and linkedin boxes*/
 .boxgitlink {
   flex: 0 0 auto;
+  margin-top: 20px;
   align-items: center;
   position: relative;
   justify-items: center;
