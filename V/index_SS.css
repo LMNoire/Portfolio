@@ -312,7 +312,7 @@ span:nth-child(18) {
 }
 .subtitle {
   font-size: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 .butn {
   background: #fa709a;
@@ -332,7 +332,7 @@ span:nth-child(18) {
   /*Center list elements*/
   text-align: center;
   /*Remove margin on left for better space*/
-  margin-left: -25px;
+  margin-left: -30px;
 }
 .card ul li {
   /*Marge between list elements for space*/
