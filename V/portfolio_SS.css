@@ -125,6 +125,15 @@ button {
 .btn-7 div:hover:after {
   width: 100%;
 }
+.custom-btn .flag-icon {
+  width: 20px;
+  height: auto; 
+  vertical-align: middle; 
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+}
 /*Réalisations h1*/
 h1 {
   font-size: 60px;
