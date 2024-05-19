@@ -134,8 +134,8 @@ button {
 }
 .custom-btn .flag-icon {
   width: 20px;
-  height: auto; 
-  vertical-align: middle; 
+  height: auto;
+  vertical-align: middle;
   position: absolute;
   top: 50%;
   left: 10px;
@@ -310,7 +310,7 @@ span:nth-child(18) {
   text-align: center;
 }
 .card:hover {
-  box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #C0FDFB;
+  box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #c0fdfb;
 }
 .card:hover button {
   box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #fff;
@@ -350,28 +350,28 @@ span:nth-child(18) {
 /*Line between cards*/
 .container::before {
   /*Empty content for line*/
-  content: '';
+  content: "";
   /*Absolute position*/
   position: absolute;
   /*Line is at the middle of cards*/
-  top: 50%; 
-  left: 50%; 
-  transform: translateX(-50%); 
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
   /*Line width*/
-  width: calc(100% - 600px); 
+  width: calc(100% - 600px);
   /*Line height*/
   height: 1px;
   /*Line color*/
-  background-color: white; 
+  background-color: white;
   box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #ffffff;
   /*Put line in the back of others elements*/
   z-index: 5;
 }
 .card:first-child {
-  margin-left: auto; 
+  margin-left: auto;
 }
 .card:last-child {
-  margin-right: auto; 
+  margin-right: auto;
 }
 /*Responsive cards*/
 @media screen and (min-width: 250px) and (max-width: 1299px) {
@@ -384,16 +384,59 @@ span:nth-child(18) {
     padding: 20px 0px;
   }
   .card {
+    margin-bottom: 80px;
     justify-items: center;
     justify-content: space-between;
     position: relative;
+  }
+  .card:last-child {
+    margin-bottom: 0;
+  }
+  /*Vertical line*/
+  .container::before {
+    /*Empty content for line*/
+    content: "";
+    /*Absolute position*/
+    position: absolute;
+    /*Line is at the middle of cards*/
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    /*Line width*/
+    width: 1px;
+    /*Line height*/
+    height: calc(100% - 100px); /* Adjust height as needed */
+    /*Line color*/
+    background-color: white;
+    box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #ffffff;
+    /*Put line in the back of others elements*/
+    z-index: 5;
   }
 }
 @media screen and (min-width: 900px) and (max-width: 1299px) {
   .container {
     flex-wrap: nowrap;
   }
-
+  /*Vertical line*/
+  .container::before {
+    /*Empty content for line*/
+    content: "";
+    /*Absolute position*/
+    position: absolute;
+    /*Line is at the middle of cards*/
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    /*Line width*/
+    width: 1px;
+    /*Line height*/
+    height: calc(100% - 100px); /* Adjust height as needed */
+    /*Line color*/
+    background-color: white;
+    box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 9px 5px #ffffff;
+    /*Put line in the back of others elements*/
+    z-index: 5;
+  }
   .card {
     justify-content: flex-start;
     width: calc(30% - 10px);
