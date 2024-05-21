@@ -149,8 +149,8 @@ button {
   content: "";
   right: 0;
   bottom: 0;
-  background: #B2F7C6;
-  box-shadow: 0 0 5px #B2F7C6;
+  background: #b2f7c6;
+  box-shadow: 0 0 5px #b2f7c6;
   transition: all 0.3s ease;
 }
 .btn-8:before {
@@ -173,8 +173,8 @@ button {
   content: "";
   left: 0;
   top: 0;
-  background: #B2F7C6;
-  box-shadow: 0 0 5px #B2F7C6;
+  background: #b2f7c6;
+  box-shadow: 0 0 5px #b2f7c6;
   transition: all 0.3s ease;
 }
 .btn-8 div:before {
@@ -192,27 +192,97 @@ button {
   width: 100%;
 }
 .openWork {
-  color: #B2F7C6;
+  color: #b2f7c6;
 }
 .custom-btn .flag-icon {
   width: 20px;
-  height: auto; 
-  vertical-align: middle; 
+  height: auto;
+  vertical-align: middle;
   position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
 }
-/*Message Card*/
-.container {
-  margin-top: 4%;
-  width: 100%;
+/*#OPENTOWORK Card*/
+.cardwork {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
-  position: relative;
-  overflow: hidden;
+  justify-content: flex-start;
+  width: 1000px;
+  min-height: 150px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 1rem;
+  z-index: 10;
+  margin: 0px auto;
+  -webkit-box-shadow: 0px 0px 15px 5px #b2f7c6;
+  -moz-box-shadow: 0px 0px 15px 5px #b2f7c6;
+  box-shadow: 0px 0px 15px 5px #b2f7c6;
 }
+.cardwork h2 {
+  color: #b2f7c6;
+}
+.cardwork p {
+  text-align: center;
+  line-height: 1.3;
+}
+#green {
+  color: #b2f7c6;
+}
+/*Responsive card and message textarea*/
+@media screen and (max-width: 600px) {
+  .cardwork {
+    width: 90%;
+    max-width: 400px;
+    margin: 40px auto;
+  }
+  #message {
+    width: 90%;
+    max-width: 350px;
+    height: 125px;
+    min-height: 125px;
+    max-height: 150px;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 600px) {
+  .cardwork {
+    margin: 40px auto;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  #message {
+    width: 90%;
+    max-width: 280px;
+    height: 125px;
+    min-height: 125px;
+    max-height: 150px;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .cardwork {
+    width: 600px;
+  }
+  #message {
+    width: 90%;
+    max-width: 500px;
+    height: 125px;
+    min-height: 125px;
+    max-height: 150px;
+    padding: 0.5rem;
+    border-radius: 8px;
+  }
+}
+/*Message Card*/
 .card {
   display: flex;
   flex-direction: column;
@@ -320,9 +390,9 @@ button {
   display: inline-block;
   line-height: 40px;
   border: none;
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .sendMail .normal {
@@ -403,6 +473,7 @@ button {
   align-items: center;
   position: relative;
   justify-items: center;
+  margin-top: 20px;
   margin-left: 15%;
   margin-right: 15%;
   justify-content: space-around;

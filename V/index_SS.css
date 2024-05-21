@@ -158,8 +158,8 @@ button {
   content: "";
   right: 0;
   bottom: 0;
-  background: #B2F7C6;
-  box-shadow: 0 0 5px #B2F7C6;
+  background: #b2f7c6;
+  box-shadow: 0 0 5px #b2f7c6;
   transition: all 0.3s ease;
 }
 .btn-8:before {
@@ -182,8 +182,8 @@ button {
   content: "";
   left: 0;
   top: 0;
-  background: #B2F7C6;
-  box-shadow: 0 0 5px #B2F7C6;
+  background: #b2f7c6;
+  box-shadow: 0 0 5px #b2f7c6;
   transition: all 0.3s ease;
 }
 .btn-8 div:before {
@@ -201,7 +201,7 @@ button {
   width: 100%;
 }
 .openWork {
-  color: #B2F7C6;
+  color: #b2f7c6;
 }
 /*Sliding name*/
 div.slide-left {
