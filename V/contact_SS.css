@@ -367,6 +367,9 @@ button {
 #message::placeholder {
   color: #aaa;
 }
+#subject::placeholder {
+  color: black;
+}
 .registerForm {
   display: flex;
   flex-direction: column;
