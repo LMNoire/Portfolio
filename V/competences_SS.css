@@ -203,20 +203,47 @@ button {
   left: 10px;
   transform: translateY(-50%);
 }
-/*Container*/
-.container {
-  margin-top: 2%;
+/*Top container*/
+.Topcontainer {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
   overflow: hidden;
+  text-align: center;
+}
+/*Container*/
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
 }
 /*Formation*/
 .formation {
   text-align: center;
+  border: dotted 1px white;
+  border-radius: 5px;
+  width: calc(50% - 0px);
+  min-width: 350px;
+  margin-bottom: 10px;
+}
+.formation:hover {
+  background-color: rgba(38, 38, 38, 0.7); /* Fond opaque lors du survol */
+}
+.formation li {
+  list-style-type: none;
+  padding: 0; 
+}
+#summary {
+  column-count: 2; 
+  column-gap: 20px;
 }
 /*Skills cards*/
 .card {
