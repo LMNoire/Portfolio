@@ -694,3 +694,40 @@ span:nth-child(18) {
     filter: blur(0);
   }
 }
+/* Top button */
+#backToTopBtn {
+  display: none; 
+  position: fixed; 
+  bottom: 20px;
+  right: 10px;
+  z-index: 99; 
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white; 
+  cursor: pointer; 
+  padding: 15px;
+  border-radius: 4px; 
+  transition: background-color 0.3s ease; 
+}
+#backToTopBtn:hover {
+  background-color: #333; 
+}
+.topButton .normal {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: auto;
+}
+.topButton .hover {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: auto;
+}
