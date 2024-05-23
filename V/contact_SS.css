@@ -734,3 +734,26 @@ span:nth-child(18) {
   width: 15px;
   height: auto;
 }
+/*Style pour le footer*/
+.footer {
+  margin-top: 30px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -1px 5px rgba(0,0,0,0.1); 
+  position: relative;
+}
+/*Ligne blanche*/
+.footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37), 0px 0px 6px 2px #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*Contenu du footer*/
+.footer-content {
+  margin-top: 2px; 
+}
