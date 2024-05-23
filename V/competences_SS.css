@@ -537,7 +537,6 @@ span:nth-child(18) {
   width: 15px;
   height: auto;
 }
-
 .topButton:hover .normal {
   display: none;
 }

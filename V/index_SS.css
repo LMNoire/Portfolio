@@ -671,6 +671,12 @@ span:nth-child(18) {
   width: 15px;
   height: auto;
 }
+.topButton:hover .normal {
+  display: none;
+}
+.topButton:hover .hover {
+  display: inline;
+}
 /*Style pour le footer*/
 .footer {
   margin-top: 30px;
