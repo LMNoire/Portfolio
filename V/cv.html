@@ -92,23 +92,72 @@
       </h1>
     </div>
 
-    <!--Cards-->
-    <div class="container">
-      <div class="card">
-        <!--Consulter-->
-        <h1 class="title">Consulter</h1>
-        <p class="subtitle">Consulter le cv dans une nouvelle fenetre</p>
-        <a href="Assets/CV_protec.pdf" target="_blank">
-          <button class="butn">Accéder</button>
-        </a>
+    <div class="Topcontainer">
+      <!--Sommaire-->
+      <div class="cardSummary">
+        <div class="title">CV</div>
+        <ul id="summary">
+          <li>
+            <a href="Assets/CV_protec.pdf" target="_blank"
+              >Consulter
+              <img src="Assets/Navbar/Display grey.svg" class="normal" />
+              <img src="Assets/Navbar/Display pink.svg" class="hover" />
+            </a>
+          </li>
+          <li>
+            <a href="Assets/CV_protec.pdf" download
+              >Télécharger
+              <img src="Assets/Navbar/Download grey.svg" class="normal" />
+              <img src="Assets/Navbar/Download pink.svg" class="hover" />
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="card">
-        <!--Telecharger-->
-        <h1 class="title">Télécharger</h1>
-        <p class="subtitle">Téléchargement du CV au format pdf</p>
-        <a href="Assets/CV_protec.pdf" download>
-          <button class="butn">Accéder</button>
-        </a>
+
+      <div class="formation">
+        <img src="Assets/Navbar/weeki.png" class="formation-image"/>
+        <h2 id="formation">Développeur Full-Stack</h2>
+        <p class="desc">
+          <strong>Weeki - Endless Visual Workspace</strong> <br />
+          Mai 2024 à Aujourd'hui <br />
+          Stage de fin de formation MS Développeur full stack : <br />
+          - Développement d'application PHP/Symfony en API (Tests points d'API
+          avec Postman) <br />
+          - Développement de composants React <br />
+          - Interaction avec les bases de données relationnelles MySql et
+          Postgres <br /><br />
+
+          Développer l'accès à un back-office avec système d'authentification
+          d'une application PHP/Symfony en API Remonter des données statistiques
+          concernant les utilisateurs et leurs connexion depuis la base de
+          donnée Traiter les données et les afficher dans des composants React
+        </p>
+      </div>
+
+      <div class="formation">
+        <h2 id="formation">Auto entrepreneur</h2>
+        <p class="desc">
+          <strong>Commerçant</strong> <br />
+          2021 à 2023 <br />
+          Vente de produits de beauté et de parfums : <br />
+          - Développement portefeuille client <br />
+          - Vente directe et contact avec la clientèle<br />
+          - Gestion des stocks <br />
+          - Démarches administratives <br />
+        </p>
+      </div>
+
+      <div class="formation">
+        <img src="Assets/Navbar/brinks.png" class="formation-image"/>
+        <h2 id="formation">Convoyeur de fonds - Chef d'équipe</h2>
+        <p class="desc">
+          <strong>Brink's</strong> <br />
+          2011 à 2022 <br />
+          CDI à temps plein au poste de chef d'équipe en fourgon blindé : <br />
+          - Responsabilité de la traçabilité des colis, de la tournée, du matériel et de l'équipage <br />
+          - Maitrise des moyens de communication et de l'armement en dotation <br />
+          - Interaction avec la clientèle <br />
+        </p>
       </div>
     </div>
 
@@ -138,7 +187,8 @@
     <footer class="footer">
       <div class="footer-line"></div>
       <div class="footer-content">
-        <a href="mentions.html">Mentions légales</a> - <a href="conditions.html">Conditions d'utilisation</a> 
+        <a href="mentions.html">Mentions légales</a> -
+        <a href="conditions.html">Conditions d'utilisation</a>
       </div>
     </footer>
 

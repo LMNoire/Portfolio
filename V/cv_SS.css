@@ -294,6 +294,63 @@ span:nth-child(18) {
     filter: blur(0);
   }
 }
+/*Top container*/
+.Topcontainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.cardSummary {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: flex-end;
+  width: calc(33% - 0px);
+  min-height: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  z-index: 10;
+  margin: 10px 10px 30px 10px;
+  -webkit-box-shadow: 0px 0px 9px 5px #ffffff;
+  -moz-box-shadow: 0px 0px 9px 5px #ffffff;
+  box-shadow: 0px 0px 9px 5px #ffffff;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  margin-bottom: 10px;
+}
+/* Initial settings for images */
+a img.hover {
+  display: none; 
+  width: 15px;
+  margin-left: 5px;
+}
+a img.normal {
+  width: 15px;
+  margin-left: 5px;
+}
+/* On hover, show the pink image and hide the grey image */
+a:hover img.hover {
+  display: inline;
+}
+
+a:hover img.normal {
+  display: none;
+}
 /*CV cards*/
 .container {
   margin-top: 2%;
@@ -304,46 +361,53 @@ span:nth-child(18) {
   position: relative;
   overflow: hidden;
 }
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  width: 400px;
-  min-height: 150px;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 18px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(18px);
-  -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  border-radius: 1rem;
-  padding: 1.5rem;
-  z-index: 10;
-  margin: 10px auto 20px auto;
-  -webkit-box-shadow: 0px 0px 9px 5px #ffffff;
-  -moz-box-shadow: 0px 0px 9px 5px #ffffff;
-  box-shadow: 0px 0px 9px 5px #ffffff;
-}
 .title {
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   margin-bottom: 1rem;
   align-self: center;
-  text-decoration: underline;
+  text-decoration: none;
+  order: 2;
 }
 .subtitle {
   font-size: 1rem;
   margin-bottom: 2rem;
 }
-.butn {
-  background: none;
-  border: none;
+/*Experience*/
+.formation {
   text-align: center;
-  font-size: 1rem;
-  background-color: #fa709a;
-  padding: 0.8rem 1.8rem;
-  border-radius: 2rem;
-  cursor: pointer;
-  margin-top: auto;
+  border: dotted 1px white;
+  border-radius: 5px;
+  width: calc(50% - 0px);
+  min-width: 350px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.formation:hover {
+  background-color: rgba(38, 38, 38, 0.7); /* Fond opaque lors du survol */
+}
+.formation li {
+  list-style-type: none;
+  padding: 0; 
+}
+.formation-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 150px; /* Width of the image */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Set the image to a lower z-index */
+}
+
+.formation h2 {
+  position: relative; /* Ensure the title is positioned */
+  z-index: 2; /* Set the title to a higher z-index */
+}
+.desc {
+  text-align: left;
+  line-height: 1.6; /* Adjust the line height for spacing between lines */
+  padding: 10px 20px; /* Add padding around the paragraph */
+  z-index: 2;
+  position: relative; 
 }
 /*Responsive CV cards*/
 @media screen and (max-width: 850px) {
@@ -355,6 +419,9 @@ span:nth-child(18) {
     width: calc(100% - 20px);
     max-width: 350px;
     margin: 10px;
+  }
+  .cardSummary {
+    min-width: 300px;
   }
 }
 @-webkit-keyframes move {
