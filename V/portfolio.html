@@ -94,18 +94,76 @@
 
     <!--Cards-->
     <div class="container">
+      <!--Pourcentage online-->
       <div class="card">
-        <h2 class="title">Calcul de pourcentages</h2>
-        <p class="subtitle">Description :</p>
-        <p class="content">
-          Calculer facilement et rapidement des pourcentages. <br />
+        <h2 id="formation">Pourcentage Online</h2>
+        <strong class="subtitle">Site web - Online</strong><br />
+        <p class="desc">
+          Calculer rapidement et facilement des pourcentages <br />
+          <u>Technologies :</u> <br />
+          - HTML/CSS <br />
+          - PHP <br />
+          - Refonte en React prévue<br />
+          <a
+            href="https://github.com/LMNoire/Pourcentage-Online"
+            target="_blank"
+            >Repository Github</a
+          >
+          <br />
         </p>
+        <div class="images-container">
+          <img
+            class="cleanthis"
+            src="Assets/Projets/pr1.jpg"
+            alt="Login Screen"
+          />
+          <img
+            class="cleanthis"
+            src="Assets/Projets/pr2.jpg"
+            alt="Dashboard"
+          />
+          <img
+            class="cleanthis"
+            src="Assets/Projets/pr3.jpg"
+            alt="Statistics"
+          />
+        </div>
+      </div>
 
-        <p class="subtitle">Technique :</p>
-        <p>HTML/CSS, PHP, Javascript</p>
-        <a href="http://pourcentage.online" target="_blank">
-          <button class="butn">Accéder</button></a
-        >
+      <!--Cleanthis-->
+      <div class="card">
+        <h2 id="formation">CleanThis</h2>
+        <strong class="subtitle">Application - Offline</strong><br />
+        <p class="desc">
+          Projet de fin de formation d'une entreprise de nettoyage<br />
+          <u>Technologies :</u> <br />
+          - HTML/CSS/Twig <br />
+          - PHP & Symfony <br />
+          - MySQL & MongoDB - React & Node.js<br />
+          <a
+            href="https://github.com/LMNoire/MS-Dev-2024/tree/master/Projet%20fil%20rouge"
+            target="_blank"
+            >Repository Github</a
+          >
+          <br />
+        </p>
+        <div class="images-container">
+          <img
+            class="cleanthis"
+            src="Assets/Projets/ct_login.jpg"
+            alt="Login Screen"
+          />
+          <img
+            class="cleanthis"
+            src="Assets/Projets/ct_dashboard.jpg"
+            alt="Dashboard"
+          />
+          <img
+            class="cleanthis"
+            src="Assets/Projets/ct_stats.jpg"
+            alt="Statistics"
+          />
+        </div>
       </div>
     </div>
 
@@ -321,6 +379,41 @@
     </div>
 
     <div class="hero">
+      <!--MERN carousel-->
+      <p class="formation">
+        MERN : Réalisation d'application suivant la Stack MERN<br />
+        Repository :
+        <a href="https://github.com/LMNoire/Stack-MERN" target="_blank"
+          >Stack MERN</a
+        >
+      </p>
+      <div class="carousel">
+        <ul>
+          <li>
+            <img src="Assets/MERN/toastmessage.jpg" /><a
+              href="https://github.com/LMNoire/Stack-MERN/tree/master/Notes%20app"
+              target="_blank"
+              >Notes app</a
+            >
+          </li>
+          <li>
+            <img src="Assets/MERN/testpostmanmern.jpg" /><a
+              href="https://github.com/LMNoire/Stack-MERN/tree/master/Notes%20app"
+              target="_blank"
+              >Notes app</a
+            >
+          </li>
+          <li>
+            <img src="Assets/MERN/addnote.jpg" /><a
+              href="https://github.com/LMNoire/Stack-MERN/tree/master/Notes%20app"
+              target="_blank"
+              >Notes app</a
+            >
+        </ul>
+      </div>
+    </div>
+
+    <div class="hero">
       <!--Python carousel-->
       <p class="formation">
         PYTHON : Réalisation de composants réutilisables<br />
@@ -440,24 +533,6 @@
       </div>
     </div>
 
-    <div class="cleanthis">
-      <p class="formation">
-        PROJET FIL ROUGE : projet de fin de formation MS-DEV<br />
-        Livraison prévue Mai 2024<br />
-        Réalisation d'un site en conditions d'entreprise et en équipe<br />
-        Repository :
-        <a
-          href="https://github.com/LMNoire/MS-Dev-2024/tree/master/Projet%20fil%20rouge"
-          target="_blank"
-          >CleanThis</a
-        >
-      </p>
-      <div class="cleanthiscontainer">
-        <img class="cleanthis" src="Assets/Projets/ct_login.jpg" />
-        <img class="cleanthis" src="Assets/Projets/ct_dashboard.jpg" />
-        <img class="cleanthis" src="Assets/Projets/ct_stats.jpg" />
-      </div>
-    </div>
     <button
       onclick="topFunction()"
       id="backToTopBtn"
@@ -474,9 +549,17 @@
     <footer class="footer">
       <div class="footer-line"></div>
       <div class="footer-content">
-        <a href="mentions.html">Mentions légales</a> - <a href="conditions.html">Conditions d'utilisation</a> 
+        <a href="mentions.html">Mentions légales</a> -
+        <a href="conditions.html">Conditions d'utilisation</a>
       </div>
     </footer>
+
+    <div id="myModal" class="modal">
+      <span class="modal-close">&times;</span>
+      <div class="modal-content">
+        <img id="modalImg" src="" />
+      </div>
+    </div>
 
     <!--JS scripts-->
     <script src="Assets/scripts/top.js"></script>
@@ -490,7 +573,24 @@
         });
       });
     </script>
+    <script>
+      document.querySelectorAll(".cleanthis").forEach((img) => {
+        img.addEventListener("click", () => {
+          document.getElementById("myModal").style.display = "flex";
+          document.getElementById("modalImg").src = img.src;
+        });
+      });
 
+      document.querySelector(".modal-close").addEventListener("click", () => {
+        document.getElementById("myModal").style.display = "none";
+      });
+
+      window.addEventListener("click", (event) => {
+        if (event.target.classList.contains("modal")) {
+          document.getElementById("myModal").style.display = "none";
+        }
+      });
+    </script>
     <!--End of body-->
   </body>
 </html>
