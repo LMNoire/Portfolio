@@ -1,5 +1,6 @@
 # Description
-Création d'un portfolio professionnel suite à une formation de développeur full stack en cours (https://www.coulombelselim.fr)
+(ACTUELLEMENT OFFLINE POUR TRANSFERT ET RENOVATION)
+Création d'un portfolio professionnel suite à une formation de développeur full stack en cours (https://www.coulombelselim.fr).
 # Langages
 HTML/CSS/PHP/Javascript
 # Front
@@ -9,6 +10,3 @@ HTML/CSS/PHP/Javascript
 - Les différentes vues sont responsive.
 # Back
 - Utilisation de phpmailer pour le formulaire d'envoi de mail
-# A venir
-- Ajout d'un footer avec CGU
-- Ajout d'une version anglaise
